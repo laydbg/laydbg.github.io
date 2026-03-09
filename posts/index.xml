@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on laydbg</title><link>https://laydbg.github.io/posts/</link><description>Recent content in Posts on laydbg</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://laydbg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>dJulkalendern 2025 Writeup</title><link>https://laydbg.github.io/posts/djul-writeup-2025/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/djul-writeup-2025/</guid><description>&lt;p>Every year Konglig Datasektionen, the Computer Science chapter at KTH Royal
+Institute of Technology, hosts a CTF-competition with one new challenge (window)
+per weekday December 1-24 at 12:15 CET. Most challenges are really more of a
+puzzle or word hunt than a traditional CTF-challenge.
+&lt;a
+href="https://djulkalendern.se/"
+target="_blank"
+>dJulkalendern&lt;/a> is meant to cater to all students
+regardless of how far into their education they are, beginning with phone
+friendly riddle-like puzzles and then increases in difficult with each
+challenge. The solution to a challenge is always an English word.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://laydbg.github.io/posts/djul-writeup-2025/feature.png"/></item><item><title>ESL Hacking</title><link>https://laydbg.github.io/posts/esl-hacking/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/esl-hacking/</guid><description>&lt;p>Around this time last year I got curious about how electronic shelf labels
+(ESLs) work. They are mainly used to display the name, information and price of
+items in physical stores. You can easily change any of this by simply updating
+the e-ink display and with most of them you do not have to be in their proximity
+to do so. I got my hands on two from the manufacturer &lt;em>Pricer&lt;/em> with the goal of
+getting it to display any image of my choosing.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://laydbg.github.io/posts/esl-hacking/feature.jpg"/></item></channel></rss>

