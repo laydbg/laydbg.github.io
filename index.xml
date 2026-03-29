@@ -1,11 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>laydbg</title><link>https://laydbg.github.io/</link><description>Recent content on laydbg</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://laydbg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>dJulkalendern 2025 Writeup</title><link>https://laydbg.github.io/posts/djul-writeup-2025/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/djul-writeup-2025/</guid><description>&lt;p>Every year Konglig Datasektionen, the Computer Science chapter at KTH Royal
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>laydbg</title><link>https://laydbg.github.io/</link><description>Recent content on laydbg</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://laydbg.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>FRA Challenge Write-up: Exfiltratören</title><link>https://laydbg.github.io/fra-challenge-writeups/exfiltratoren/</link><pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/fra-challenge-writeups/exfiltratoren/</guid><description>&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ >
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ >
+ &lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+&lt;/span>
+ &lt;/span>
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ >This write-up is in Swedish. I may translate it to
+English in the future.&lt;/span>
+&lt;/div>
+
+&lt;p>&amp;ldquo;Yta 0x33 AB, ett hemlighetsfullt företag i rymdbranschen, misstänker att en av
+dess anställda läcker känslig information till utomstående. Det är ett
+allvarligt läge, då det finns indikationer på att medarbetaren är agent för en
+aktör som planerar att genomföra ett inbrott på företaget. Analysera trafiken
+och försök hitta vilken information som har exfiltrerats. Utmaningen innehåller
+7 flaggor.&lt;/p></description></item><item><title>dJulkalendern 2025 Writeup</title><link>https://laydbg.github.io/posts/djul-writeup-2025/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/djul-writeup-2025/</guid><description>&lt;p>Every year Konglig Datasektionen, the Computer Science chapter at KTH Royal
 Institute of Technology, hosts a CTF-competition with one new challenge (window)
 per weekday December 1-24 at 12:15 CET. Most challenges are really more of a
 puzzle or word hunt than a traditional CTF-challenge.
-&lt;a
-href="https://djulkalendern.se/"
-target="_blank"
->dJulkalendern&lt;/a> is meant to cater to all students
+&lt;a href="https://djulkalendern.se/" target="_blank" rel="noreferrer">dJulkalendern&lt;/a> is meant to cater to all students
 regardless of how far into their education they are, beginning with phone
 friendly riddle-like puzzles and then increases in difficult with each
 challenge. The solution to a challenge is always an English word.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://laydbg.github.io/posts/djul-writeup-2025/feature.png"/></item><item><title>ESL Hacking</title><link>https://laydbg.github.io/posts/esl-hacking/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/esl-hacking/</guid><description>&lt;p>Around this time last year I got curious about how electronic shelf labels
@@ -14,66 +38,98 @@ items in physical stores. You can easily change any of this by simply updating
 the e-ink display and with most of them you do not have to be in their proximity
 to do so. I got my hands on two from the manufacturer &lt;em>Pricer&lt;/em> with the goal of
 getting it to display any image of my choosing.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://laydbg.github.io/posts/esl-hacking/feature.jpg"/></item><item><title>FRA Challenge Write-up: Mycket JSON</title><link>https://laydbg.github.io/fra-challenge-writeups/mycket_json/</link><pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/fra-challenge-writeups/mycket_json/</guid><description>&lt;div
-class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
->
-&lt;span
-class="text-primary-400 pe-3 flex items-center"
->
-&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ >
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ >
+ &lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
 &lt;/span>
-&lt;/span>
-&lt;span
-class="dark:text-neutral-300"
->This write-up is in Swedish. I may translate it to
+ &lt;/span>
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ >This write-up is in Swedish. I may translate it to
 English in the future.&lt;/span>
 &lt;/div>
+
 &lt;p>&amp;ldquo;En angripare har placerat skadlig kod på att flertal mål. Kan du analysera
 nätverksinspelningen och bilda dig en uppfattning om vad som händer?&lt;/p></description></item><item><title>FRA Challenge Write-up: Olika angrepp</title><link>https://laydbg.github.io/fra-challenge-writeups/olika_angrepp/</link><pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/fra-challenge-writeups/olika_angrepp/</guid><description>&lt;div
-class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
->
-&lt;span
-class="text-primary-400 pe-3 flex items-center"
->
-&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ >
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ >
+ &lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
 &lt;/span>
-&lt;/span>
-&lt;span
-class="dark:text-neutral-300"
->This write-up is in Swedish. I may translate it to
+ &lt;/span>
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ >This write-up is in Swedish. I may translate it to
 English in the future.&lt;/span>
 &lt;/div>
+
 &lt;p>&amp;ldquo;Ett företag har upptäckt misstänkt aktivitet i sitt interna nät. IT-personalen
 har identifierat följande fyra tillfällen specifikt, och sparat det i
 medföljande PCAP. Hjälp företaget genom att förklara så noga du kan vad som
 hänt.&lt;/p></description></item><item><title>FRA Challenge Write-up: Anfallet</title><link>https://laydbg.github.io/fra-challenge-writeups/anfallet/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/fra-challenge-writeups/anfallet/</guid><description>&lt;div
-class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
->
-&lt;span
-class="text-primary-400 pe-3 flex items-center"
->
-&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ >
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ >
+ &lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
 &lt;/span>
-&lt;/span>
-&lt;span
-class="dark:text-neutral-300"
->This write-up is in Swedish. I may translate it to
+ &lt;/span>
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ >This write-up is in Swedish. I may translate it to
 English in the future.&lt;/span>
 &lt;/div>
+
 &lt;p>&amp;ldquo;Vad har en av nätverkets klienter för sig? Förstå trafiken och svara på
 frågorna.&lt;/p></description></item><item><title>FRA Challenge Write-up: Kattastrofen</title><link>https://laydbg.github.io/fra-challenge-writeups/kattastrofen/</link><pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/fra-challenge-writeups/kattastrofen/</guid><description>&lt;div
-class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
->
-&lt;span
-class="text-primary-400 pe-3 flex items-center"
->
-&lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ >
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ >
+ &lt;span class="relative block icon">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/>&lt;/svg>
 &lt;/span>
-&lt;/span>
-&lt;span
-class="dark:text-neutral-300"
->This write-up is in Swedish. I may translate it to
+ &lt;/span>
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ >This write-up is in Swedish. I may translate it to
 English in the future.&lt;/span>
 &lt;/div>
+
 &lt;p>&amp;ldquo;En statstjänsteman på en skyddsvärd myndighet är svag för bilder på kattungar.
 I sin iver att ta del av fler sådana bilder, har hen råkat ladda ned något som
 inte var bra. Inte alls bra. Vi misstänker att skadlig kod har använts för att

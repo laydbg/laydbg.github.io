@@ -2,10 +2,7 @@
 Institute of Technology, hosts a CTF-competition with one new challenge (window)
 per weekday December 1-24 at 12:15 CET. Most challenges are really more of a
 puzzle or word hunt than a traditional CTF-challenge.
-&lt;a
-href="https://djulkalendern.se/"
-target="_blank"
->dJulkalendern&lt;/a> is meant to cater to all students
+&lt;a href="https://djulkalendern.se/" target="_blank" rel="noreferrer">dJulkalendern&lt;/a> is meant to cater to all students
 regardless of how far into their education they are, beginning with phone
 friendly riddle-like puzzles and then increases in difficult with each
 challenge. The solution to a challenge is always an English word.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://laydbg.github.io/posts/djul-writeup-2025/feature.png"/></item><item><title>ESL Hacking</title><link>https://laydbg.github.io/posts/esl-hacking/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/esl-hacking/</guid><description>&lt;p>Around this time last year I got curious about how electronic shelf labels
