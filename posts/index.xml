@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on laydbg</title><link>https://laydbg.github.io/posts/</link><description>Recent content in Posts on laydbg</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://laydbg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Undutmaning 2026 Writeup</title><link>https://laydbg.github.io/posts/undutmaning-2026/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/undutmaning-2026/</guid><description>&lt;p>Since 2022 the Swedish agencies FRA, Must and Säkerhetspolisen jointly host an
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on laydbg</title><link>https://laydbg.github.io/posts/</link><description>Recent content in Posts on laydbg</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://laydbg.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Generating Diverse Training Environments for Autonomous Cyber Defense</title><link>https://laydbg.github.io/posts/instamal/</link><pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/instamal/</guid><description>&lt;div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+ This post captures the core of my master thesis project. A link to the full
+report will be added here once it has been published.
+&lt;/div>
+
+
+&lt;h2 class="relative group">Problem and motivation
+ &lt;div id="problem-and-motivation" class="anchor">&lt;/div>
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#problem-and-motivation" aria-label="Anchor">#&lt;/a>
+ &lt;/span>
+ 
+&lt;/h2>
+&lt;p>Threat modeling is a field within cybersecurity generally aimed at identifying
+potential attack paths through some system of interest and evaluating the
+effectiveness of defensive strategies. A common representation of attack
+scenarios is the &lt;em>attack graph&lt;/em>, in which nodes represent possible attacker
+actions and edges represent causal dependencies between those actions. The graph
+below shows a very minimal example of this.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://laydbg.github.io/posts/instamal/feature.png"/></item><item><title>Undutmaning 2026 Writeup</title><link>https://laydbg.github.io/posts/undutmaning-2026/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/undutmaning-2026/</guid><description>&lt;p>Since 2022 the Swedish agencies FRA, Must and Säkerhetspolisen jointly host an
 annual CTF called &lt;em>Undutmaning&lt;/em>. This year&amp;rsquo;s event took place on March 21st and
 included a total of 24 challenges to be solved within 8 hours. The challenges
 span a range of categories and various levels of difficulty.&lt;/p></description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://laydbg.github.io/posts/undutmaning-2026/feature.png"/></item><item><title>dJulkalendern 2025 Writeup</title><link>https://laydbg.github.io/posts/djul-writeup-2025/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://laydbg.github.io/posts/djul-writeup-2025/</guid><description>&lt;p>Every year Konglig Datasektionen, the Computer Science chapter at KTH Royal
